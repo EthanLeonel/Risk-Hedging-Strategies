@@ -1,0 +1,476 @@
+---
+title: <center> <h0> **Opciones** </h0> </center>
+author: 
+  <center> <h5>  García Melena Ethan Leonel. </h5> </center>
+  <center> <h5>  Guerrero Suárez Luis Miguel. </h5> </center>
+  <center> <h5>  Ramírez Guizar Brenda Jazmín. </h5> </center>
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+
+```{css, echo = FALSE}
+#TOC {
+  position: fixed;
+  overflow:auto;
+}
+
+h1.title{
+  color: black;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+```
+
+### **Parte 1 y Parte 2: Árboles Binomiales y Black-Scholes**
+
+### *Funciones binomopt y binomplot*
+
+Según la paquetería de derivmkts la función de binomopt usa el procedimiento de árboles binomiales para poder calcular el precio de las primas put y primas call.
+
+La función por default nos regresa el precio de la opción que queremos calcular sin embargo también podemos pedirle que nos devuelva los parámetros con los que calculamos la opción así como las matrices de precios en cada step.
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/binomopt.png)|
+|:--:| 
+| *Binomopt* |
+
+La función binomplot nos regresa una gráfica con el árbol binomial diciéndonos la probabilidad de estar en cada nodo la cual está representada por el área de cada nodo. Los nodos se imprimen de color verde si la opción debe ejercerse y de rojo si no debe ejercerse.
+
+La función contiene los siguientes parámetros:
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/binomplot.png)|
+|:--:| 
+| *Binomplot* |
+
+Los parámetros más importantes para ambas funciones son los siguientes:
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/param.png)|
+|:--:| 
+| *Parámetros* |
+
+### *Volatilidad Implícita*
+
+* ¿Qué es?  
+La volatilidad implícita se define como la expectativa que tiene el mercado con respecto a la variabilidad del precio de un activo.  Es decir, qué piensa el mercado ahora respecto a la distribución de probabilidad futura del activo. La volatilidad implícita va mas en relación al precio del contrato de la opción en el mercado, por lo tanto podemos tener volatilidades implícitas diferentes para una opción call y una opción put sobre el mismo subyacente.  
+* Funcionalidad  
+Los inversores pueden utilizar la volatilidad implícita para proyectar los movimientos futuros y la oferta y la demanda y, a menudo, emplearla para fijar el precio de los contratos de opciones. Independientemente de si una opción es una opción de compra o de venta, su precio o prima aumentará a medida que aumente la volatilidad implícita. Esto se debe a que el valor de una opción se basa en la probabilidad de que termine __At The Money__.  
+* ¿Cómo se mide?
+Para medir la volatilidad implícita se pueden tener dos enfoques. Un enfoque determinista usando métodos numéricos como el método de Newton Raphson o un enfoque estocástico para intentar estimar la volatilidad implícita a lo largo del tiempo.
+
+  * Método de Newton Raphson. 
+Este método consiste en interpolar el valor de la volatilidad de acuerdo al valor observado del mercado y usando el precio teórico dado por el modelo de Black-Scholes.  
+    * Primero definimos la función de volatilidad que está dada por:  
+    
+    * $$f(\sigma) = C_{mkt} - C_{BS}(\sigma)$$  
+
+    * Donde:  
+              $C_{mkt} =$ Es el precio de mercado de la opción.  
+              $C_{BS} =$ Es el precio teórico de la opción.  
+      
+    * Usando las expresiones del método de Newton Raphson tenemos:
+
+    * $$f^{'}_{(x_{k})} = \frac{f_{(x_{k})}-0}{x_{k}-x_{k+1}}$$  
+    * $$x_{k+1} = x_{k}-\frac{f_{(x_{k})}}{f^{'}_{(x_{k})}}$$
+    * Sustituyendo $\sigma_{imp}$ en lugar de $x_{k}$ tenemos que:
+    
+    * $$\sigma_{imp_{2}} = \sigma_{imp_{1}}-\frac{C_{mkt} - C_{BS}(\sigma)}{-\frac{\partial C_{BS}(\sigma)}{\partial \sigma}}$$
+    * __La cual es una forma iterativa de estimar la volatilidad implicada a partir de un punto inicial__.  
+    
+  * El enfoque estocástico puede ser un poco complejo de comprender debido a que se necesitan conocimientos de teoría de la medida y cálculo estocástico. Sin embargo dejaremos en lista algunos modelos clásicos que son usados para modelar la volatilidad implícita: 
+    * El modelo Stochastic Alpha-Beta-Rho (SABR)
+    * Volatilidad implícita del modelo de Merton  
+  
+Finalmente revisemos algunas funciones que ayudan a calcular la volatilidad implícita con la paquetería de devmkts. 
+
+### *Funciones bscallimpvol y bsputimpvol*
+La funciones bscallimpvol y bsputimpvol calculan la volatilidad implícita. También calcula los precios de las acciones implícitos en el precio de una opción dada, la volatilidad y características de la opción.
+
+Las funciones contienen los siguientes parámetros:
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/bscallimpvol.png)|
+|:--:| 
+| *bscallimpvol y bsputimpvol* |
+
+Donde cada parámetro significa: 
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/parambscallimpvol.png)|
+|:--:| 
+| *parámetros de bscallimpvol y bsputimpvol* |
+
+
+### **Dashboard**
+
+
+#### *Opciones mediante árboles binomiales*
+
+Para calcular la prima de opciones mediante un árbol binomial usaremos el Tablero 1, este lo podemos seleccionar en la parte superior izquierda. En este tablero podemos seleccionar si nuestra opción es una opción call o una opción put, posteriormente debemos seleccionar los datos de nuestra opción como lo son:
+
+* r: La tasa libre de riesgo.
+* n: El número de divisiones o saltos que tendrá nuestro árbol binomial.
+* St: El precio spot de nuestra acción el día de hoy.
+* v: La volatilidad calculada en los precios históricos de la acción.
+* k: El precio strike al que suponemos la acción podría valer a tiempo t.
+* t: Tiempo de la opción medido en años
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/opciones.png)|
+|:--:| 
+| *Características de la opción* |
+
+Una vez ajustados estos datos a nuestra opción debemos dar click en el boton "Actualizar filtros" posteriormente el tablero nos devolverá 3 cosas:
+
+* Un resumen de los datos que ingresamos para evaluar la opción.
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/filtros.png)|
+|:--:| 
+| *Características de la opción* |
+
+* El precio de la prima calculado con la función "binomopt" de la librería "derivmkts"
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/prima.png)|
+|:--:| 
+| *Prima* |
+
+* El gráfico del árbol binomial generado con la función "binomplot" de la librería "derivmkts"
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/arbol.png)|
+|:--:| 
+| *Árbol binomial* |
+
+#### *Valuación de opciones mediante el modelo de Black and Scholes*
+
+Para hacer la valuación de opciones mediante el modelo de Black and Scholes, letras griegas y volatilidad implícita usaremos el tablero 2, este lo podemos seleccionar en la parte superior izquierda del tablero.
+Dentro de este tablero podemos seleccionar si calcularemos la opción para activos sin pago de dividendos, activos con pago de dividendos, divisas o futuros. Dentro de cada uno de estos subtableros podemos seleccionar si nuestra opción es una opción call o una opción put, posteriormente debemos seleccionar las características de nuestra opción, estas pueden ser:
+
+* r: Tasa libre de riesgo.
+* St: El precio spot de nuestra acción el día de hoy.
+* v: La volatilidad calculada en los precios históricos de la acción.
+* k: El precio strike al que suponemos la acción podría valer a tiempo t.
+* t: Tiempo de la opción medido en años.
+* d: Tasa de dividendos.
+* tl: Tasa local.
+* tf: Tasa foranea.
+* P: Precio de la opción para calcular la volatilidad implícita.
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/opciones2.png)|
+|:--:| 
+| *Características de la opción* |
+
+Una vez ajustados estos datos a nuestra opción debemos dar click en el boton "Actualizar filtros" posteriormente el tablero nos devolverá 2 cosas:
+
+* Un resumen de los datos que ingresamos para evaluar la opción.
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/filtros2.png)|
+|:--:| 
+| *Características de la opción* |
+
+* El precio de la prima, las letras griegas y la volatilidad implícita calculados con la función "bsopt" y "bscallimpvol" respectivamente de la librería "derivmkts", El tablero nos dará la opción de descargar estos datos en un libro de Excel.
+
+|![](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Examenes/Examen 3/Entrega_Final/prima2.png)|
+|:--:| 
+| *Prima, letras griegas y volatilidad implícita* |
+
+### *Link al Dashboard*
+
+[Link al Dashboard de Opciones](https://leogame0912.shinyapps.io/Dashboard_Opciones/)
+
+### **Parte 3: Valuaciones**
+
+### *Bitcoin*
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+library(tseries)
+library(astsa)
+library(forecast)
+library(tidyverse)
+library(quantmod)
+library(TTR)
+library(tidyquant)
+library(nortest)
+library(car)
+library(derivmkts)
+library(stats)
+```
+
+Para el Bitcoin valuaremos una opción call y una opción put considerando un precio Strike de 35,000 con un plazo de vencimiento a 180 días. Tomando como fecha de inicio del contrato el 30 de mayo del 2022 y como precio spot el valor de cierre en ese día.
+
+```{r}
+# Descargamos el histórico de precios 
+Bitcoin =  'BTC-USD'
+quantmod::getSymbols(Bitcoin, from="2017-01-01", to = "2022-05-30", src="yahoo", periodicity="daily")
+Bitcoin = `BTC-USD`
+Bitcoin_Close <- Bitcoin$`BTC-USD.Close`
+```
+Hagamos de manera muy resumida un análisis técnico del activo. 
+
+```{r}
+# Bitcoin
+quantmod::chartSeries(Bitcoin_Close,type = "line",subset = "2017-01::2022-05",
+            theme = quantmod::chartTheme("white", up.col='gold'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Como podemos ver en los gráficos desde 2017 el Bitcoin ha subido demasiado de valor debido a que nos encontramos en un auge de la tecnología implicando que los mercados quieran entrar en nuevos terrenos relacionados a este sector. Bitcoin es el pionero de las criptomonedas en todo el mundo de ahí su enorme crecimiento en los últimos años. A inicios del 2022 el precio del Bitcoin cayó debido a distintos sucesos como geopolíticos y económicos. Una de las principales causas de esta caída es la subida de las tasas de interés por parte de la reserva federal las cuales le arrebatan liquidez a los mercados de renta variable y FX provocando que muchos inversionistas migren de estos mercados a mercados de renta fija. 
+
+Por lo que podemos ver en la gráfica del precio y el indicador de fuerza relativa puede ser un buen momento para comprar pues el precio se encuentra muy cerca de la mitad del precio máximo al que llegó a estar. Sin embargo es importante estar monitoreando este tipo deactivos debido a su gran volatilidad pues el precio podría descender aún más debdio a la carrera de alza en las tasas de interés, algunas de las estrategias que se podrían adoptar es hacer dividir el capital de compra y realizar compras escalonadas conforme el precio vaya bajando, otra estrategia es invertir de forma apalancada en futuros u opciones sin embargo estas suelen ser decisiones de alto riesgo que se recomiendan tomar o rechazar en caso de conocer el riesgo que implica y como funcionan.
+
+
+Ahora calcularemos los parámetros de volatilidad y tasa de interés usando dos funciones.  
+
+Para calcular la volatilidad usaremos la función $volatility()$ la cual calcula la volatilidad histórica usando el método de German Klass el cual asume un movimiento browniano para estimar la volatilidad a lo largo de la historia hasta un punto del tiempo, este método ocupa los precios de apertura, cierre, máximos y mínimos.
+
+Para calcular la tasa de interés usaremos la función de $yearlyReturn()$ con el fin de encontrar el rendimiento anualizado que ha dado bitcoin desde 2017. Posteriormente calcularemos la media de todo el vector histórico de rendimientos y propondremos esa tasa de interés, creemos que es un buen estimador basado en datos históricos y es sencillo debido a que se calcula desde un enfoque determinista y no estocástico.
+
+```{r}
+# Calculamos los parámetros para usar las funciones binomopt y binomplot.
+
+sigma_btc <- tail(volatility(Bitcoin[,1:4],n = 1976, calc = "garman.klass"),n=1)
+
+sigma_btc <- as.vector(sigma_btc)
+
+tasa_btc <- mean(yearlyReturn(Bitcoin[,4], type = 'log'))
+
+```
+
+Realizaremos el cálculo de las primas para una opción call y una opción put sobre el btc.
+
+```{r message=FALSE, warning=FALSE}
+library(scales)
+
+k <- 35000
+s <- as.vector(tail(Bitcoin$`BTC-USD.Close`,n=1))
+# Usando una convención Actual/360
+t <- 180/360
+
+btc_call <- binomopt(s = s,k = k,v = sigma_btc, r = tasa_btc, tt =t, d = 0, american = F,
+         putopt = F)
+
+btc_put <- binomopt(s = s,k = k,v = sigma_btc, r = tasa_btc, tt =t, d = 0, american = F,
+         putopt = T)
+
+Resumen <- as.data.frame(rbind(paste(round(s,2)," USD"),paste(k," USD "),percent(sigma_btc),percent(tasa_btc),t,paste(round(btc_call,2)," USD "),paste(round(btc_put,2)," USD ")))
+
+rownames(Resumen) <- c("Spot","Strike","Volatilidad","i","Tiempo","Prima call",
+                       "Prima put")
+colnames(Resumen) <- c("Valores")
+
+kable(Resumen)
+
+
+```
+
+Ahora veamos el árbol binomial:
+
+```{r}
+
+k <- 35000
+s <- as.vector(tail(Bitcoin$`BTC-USD.Close`,n=1))
+
+# Usando una convención Actual/360
+t <- 180/360
+
+# Call
+binomplot(s = s,k = k, sigma_btc,tasa_btc,t,0, nstep = 10, american = F,
+          putopt = F)
+
+```
+
+Como podemos ver en la gráfica de la opción call estamos at the money siempre y cuando el precio del Bitcoin supere el valor de 43404.87 $(Strike+Prima_{call})$ , pues de esa manera ya estaríamos viendo una ganancia bruta resultante de ejercer la opción de compra a $35,000 USD$ e ir al mercado y vender a un precio más elevado. 
+
+```{r}
+# Put
+binomplot(s = s,k = k, sigma_btc,tasa_btc,t,0, nstep = 10, american = F,
+          putopt = T)
+```
+
+Como podemos ver en la gráfica de la opción put estamos at the money siempre y cuando el precio del Bitcoin esté por debajo de 32086.04  $(Strike-Prima_{put})$ , pues de esa manera ya estaríamos viendo una ganancia bruta resultante de ejercer la opción de venta a $35,000 USD$ pues estaríamos vendiendo el activo más caro de lo que realmente cuesta en el mercado. En este supuesto podríamos no contar con el activo y al vencimiento del contrato si vemos que el precio está por debajo de este umbral $(Strike-Prima_{put})$ podríamos comprar el Bitcoin a ese precio y ejercer la opción de venta que nos permita pagar la prima y generar una ganancia por la venta de Bitcoin.
+
+
+
+### *AMAZON Inc.*
+
+Para una acción de AMAZON valuaremos una opción call y una opción put considerando un precio Strike de 150 USD con un plazo de vencimiento a 180 días. Tomando como fecha de inicio del contrato el 30 de mayo del 2022 y como precio spot el valor de cierre en ese día. Consideramos que la acción no tiene dividendos durante el periodo del contrato.
+
+```{r}
+# Descargamos el histórico de precios 
+Amazon =  'AMZN'
+quantmod::getSymbols(Amazon, from="2017-01-01", to = "2022-05-30", src="yahoo", periodicity="daily")
+Amazon = `AMZN`
+Amazon_Close <- Amazon$`AMZN.Close`
+```
+
+Realizamos un análisis técnico de la acción de Amazon
+```{r}
+# Amazon
+quantmod::chartSeries(Amazon_Close, type = "line", subset = "2017-01::2022-05",
+            theme = quantmod::chartTheme("white", up.col='orange'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Podemos notar que el precio de la acción de Amazon ha tenido un precio al alza con ligeras caídas a pesar de esto, el precio no ha tocado los valores que tuvo durante 2017, de septiembre a 2018 de marzo 2022, el precio se mantuvo para después comenzar con una constante de subidas en el precio, esto debido a la pandemis por covid-19 en la cual muchas personas dejaron de salir y optaron por el e-commerce, dicho aumento siguió presente con ligeras variaciones, sin embargo fue a finales de 2021 que el precio comenzó bajae, estando cerca de volver a los precios que tenía a principios de 2020.
+
+
+Calculemos los parámetros de volatilidad y tasa de interés usando las funciones $volatility()$ y $yearlyReturn()$ respectivamente.
+
+```{r}
+# Calculamos los parámetros para usar las funciones binomopt y binomplot.
+
+sigma_amzn <- as.vector(tail(volatility(Amazon[,1:4],n = 1361, calc = "garman.klass"),n=1))
+
+tasa_amzn <- mean(yearlyReturn(Amazon[,4], type = 'log'))
+```
+
+Veamos el cálculo de las primas para una opción call y una opción put sobre la acción de Amazon.
+
+```{r message=FALSE, warning=FALSE}
+library(scales)
+
+k <- 150
+s <- as.vector(tail(Amazon$`AMZN.Close`,n=1))
+# Usando una convención Actual/360
+t <- 180/360
+
+amzn_call <- binomopt(s = s, k = k, v = sigma_amzn, r = tasa_amzn, tt =t, d = 0, american = F, putopt = F)
+
+amzn_put <- binomopt(s = s, k = k, v = sigma_amzn, r = tasa_amzn, tt =t, d = 0, american = F, putopt = T)
+
+Resumen <- as.data.frame(rbind(paste(round(s,2)," USD"),paste(k," USD"),percent(sigma_amzn),percent(tasa_amzn),t,paste(round(amzn_call,2)," USD "),paste(round(amzn_put,2)," USD ")))
+
+rownames(Resumen) <- c("Spot","Strike","Volatilidad","i","Tiempo","Prima call",
+                       "Prima put")
+colnames(Resumen) <- c("Valores")
+
+kable(Resumen)
+```
+
+Veamos los árboles binomiales para una opción call y una opción put:
+
+```{r}
+# Parametros
+k <- 150
+s <- as.vector(tail(Amazon$`AMZN.Close`,n=1))
+
+# Usando una convención Actual/360
+t <- 180/360
+
+# Call
+binomplot(s = s,k = k, sigma_amzn,tasa_amzn,t,0, nstep = 10, american = F, putopt = F)
+```
+
+Podemos ver que en ningún momento estaremos en una posición at the money ya que el precio strike supera por mucho el precio de una acción de Amazon por lo que tomar una opción call ya que al menos en medio año no tendremos oportunidad de obtener una ganancia.
+
+```{r}
+# Put
+binomplot(s = s,k = k, sigma_amzn,tasa_amzn,t,0, nstep = 10, american = F,putopt = T)
+```
+
+Para el caso de una opción put podemos ver que siempre estaremos en una posicón at the money ya que el precio strike estará arriba del precio de mercado por lo que al vender a $2500$ obtendremos una ganancia.
+
+
+### *Fomento Económico Mexicano*
+
+Para una acción de FEMSA valuaremos una opción call y una opción put considerando un precio Strike de 160 MXN con un plazo de vencimiento a 180 días. Tomando como fecha de inicio del contrato el 30 de mayo del 2022 y como precio spot el valor de cierre en ese día. Consideramos que la acción tiene dividendos de $1.218422$ durante 2021.
+
+```{r}
+# Descargamos el histórico de precios 
+FEMSA =  'FEMSAUBD.MX'
+quantmod::getSymbols(FEMSA, from="2017-01-01", to = "2022-05-30", src="yahoo", periodicity="daily")
+FEMSA = `FEMSAUBD.MX`
+FEMSA_Close <- FEMSA$`FEMSAUBD.MX.Close`
+
+#FEMSA 2021
+FEMSA2021 =  'FEMSAUBD.MX'
+quantmod::getSymbols(FEMSA2021, from="2021-01-01", to = "2021-12-31", src="yahoo", periodicity="daily")
+FEMSA2021 = `FEMSAUBD.MX`
+
+```
+
+Realizamos un análisis técnico de la acción de Amazon
+```{r}
+# FEMSA
+quantmod::chartSeries(FEMSA_Close, type = "line", subset = "2017-01::2022-05",
+            theme = quantmod::chartTheme("white", up.col='darkred'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+En la gráfica podemos ver que el precio de FEMSA durante enero 2017 y enero de 2020 se había mantenido, sin embargo, a partir de 2020 tiene un caída un tanto estrepitosa en su precio, tocando el punto más bajo en septiembre de 2020, esta baja en el precio puede deberser a la pandemia por covid-19, sin embargo a partir de septiembre el precio de dicha acción ha ido al alza, a pesar de esto no ha logrado tener el precio que tuvo antes de 2020, inclusive en los últimos meses podemos ver nuevamente una tendencia a la baja.
+
+
+Calculemos los parámetros de volatilidad y tasa de interés usando las funciones $volatility()$ y $yearlyReturn()$ respectivamente.
+
+```{r}
+# Calculamos los parámetros para usar las funciones binomopt y binomplot.
+
+sigma_femsa <- as.vector(tail(volatility(FEMSA[,1:4],n = 1359, calc = "garman.klass"),n=1))
+
+tasa_femsa <- mean(yearlyReturn(FEMSA[,4], type = 'log'))
+
+div_femsa <- 2/mean(FEMSA2021[,4])
+```
+
+
+Veamos el cálculo de las primas para una opción call y una opción put sobre la acción de Amazon.
+
+```{r message=FALSE, warning=FALSE}
+library(scales)
+
+k <- 160
+s <- as.vector(tail(FEMSA$`FEMSAUBD.MX.Close`,n=1))
+# Usando una convención Actual/360
+t <- 180/360
+
+femsa_call <- binomopt(s = s, k = k, v = sigma_femsa, r = tasa_femsa, tt =t, d = div_femsa, american = F, putopt = F)
+
+femsa_put <- binomopt(s = s, k = k, v = sigma_amzn, r = tasa_amzn, tt =t, d = div_femsa, american = F, putopt = T)
+
+Resumen <- as.data.frame(rbind(paste(round(s,2)," USD"),paste(k," USD"),percent(sigma_femsa),percent(tasa_femsa), percent(div_femsa),t,paste(round(femsa_call,2)," USD "),paste(round(femsa_put,2)," USD ")))
+
+rownames(Resumen) <- c("Spot","Strike","Volatilidad","i","Dividendo","Tiempo","Prima call","Prima put")
+colnames(Resumen) <- c("Valores")
+
+kable(Resumen)
+```
+
+
+Veamos los árboles binomiales para una opción call y una opción put:
+
+```{r}
+# Parametros
+k <- 160
+s <- as.vector(tail(FEMSA$`FEMSAUBD.MX.Close`,n=1))
+
+# Usando una convención Actual/360
+t <- 180/360
+
+# Call
+binomplot(s = s,k = k, sigma_femsa,tasa_femsa,t,div_femsa, nstep = 10, american = F, putopt = F)
+```
+
+Para una acción de FEMSA vemos que si tenemos una opción call estaremos at the money cuando estemos arriba del precio strike, ya que el precio de mercado estará más alto y podrá comprarse a un precio más barato, de forma que se tendría una ganancia.
+
+```{r}
+# Put
+binomplot(s = s,k = k, sigma_femsa,tasa_femsa,t,div_femsa, nstep = 10, american = F,putopt = T)
+
+```
+
+Para una opción put, estaremos en una posición at the money cuando el precio esté por debajo del precio strike, ya que al ser una opción de venta podremos vender a un precio más alto que el de mercado, obteniendo así una ganancia. 
+
+
+
+
+

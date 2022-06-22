@@ -1,0 +1,1510 @@
+---
+title: <center> <h0> **Tarea Examen Forwards** </h0> </center>
+author: 
+  <center> <h5>  Ramírez Guizar Brenda Jazmín. </h5> </center>
+  <center> <h5>  García Melena Ethan Leonel. </h5> </center>
+  <center> <h5>  Guerrero Salazar Luis Miguel. </h5> </center>
+output: 
+  html_document:
+    theme: united
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# *Parte 1 Commodity Forward*
+
+## **Investigación**
+
+### **Oro**
+
+![Precio del oro.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_oro.png)
+
+Si nos remontamos a 1979 podemos ver que el precio iba al alza, alcanzando el precio de 650, sin embargo, para finales de 1980 el precio comenzó a bajar, teniendo ligeras subidas, pero sin alcanzar el máximo alcanzado durante 1979, la baja de precios permaneció durante muchos años, fue hasta 2001 que el precio del oro comenzó a subir aun así fue hasta 2007 que el precio del oro alcanzó nuevamente el precio que tuvo en 1979, a partir de 2007 el oro estuvo al alza esto en parte a que durante 2008-2011 se invertía en oro como una forma de protegerse contra un posible quiebre del sistema financiero, fue hasta finales de 2012 que volvió a presentar un comportamiento a la baja, de tal forma que para finales de 2013 el precio del metal había bajado cerca del 30%, dentro de los principales motivos de esta baja en el precio se encuentra la falta de interés por parte de los inversionistas para invertir en oro, ya que encontraban más rentable invertir en productos de renta variable, renta fija, mercado de futuros o emisiones de alto riesgo, de forma que los inversionistas que entraron durante 2008-2011 salieron.
+Otro motivo de la baja en el precio fue la falta de confianza en el oro-papel, la falta oro físico hizo que las personas desconfiaran y decidieran no invertir en él.
+
+Notemos que de 2013 a 2018 el precio del oro tuvo un comportamiento entre baja y alta, siendo hasta finales de 2018 que se comenzó a ver un comportamiento al alza en el precio del oro, este comportamiento se mantuvo los primeros trimestres de 2020, ya que debido a la pandemia por covid-19 se consideró al oro como un activo de refugio, a pesar de esto, en los últimos trimestres el precio del oro comenzó a tambalearse ya que presentó ligeras subidas y bajadas, estas últimas por el avance en la creación de vacunas contra el virus de covid-19, sin embargo, 2020 fue el año con los precios más altos en una década, esto al ser considerado un activo seguro.
+Para 2021 el precio del oro comenzó con un precio al alza lo cual sonaba alentador, sin embargo, para el cierre del año el metal habría disminuido aproximadamente 5% su valor.
+Por último, en 2022 el precio del oro se ha mantenido con un comportamiento de alza y baja, manteniéndose elevado respecto a los niveles previos a la pandemia, durante su primer trimestre ha tenido el menor crecimiento durante el último año, esto a pesar de tener varias subidas en el precio y a que se considera al oro como activo de refugio seguro en medio de la aversión al riesgo por las tensiones geopolíticas entre Rusia y Ucrania, así como el entorno inflacionario y las nuevas variantes de COVID.
+
+### **Azúcar**
+
+![Precio del azúcar.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_azucar.png)
+
+Notemos que el precio del azúcar no ha tenido un crecimiento constante, ha tenido momento en los que ha estado al alza y otro en los que ha estado a la baja.
+Vemos que durante 1978 el precio del azúcar comenzó a subir de gran manera llegando a su valor máximo, el cual hasta la fecha se mantiene como el precio más alto que ha tenido el azúcar desde entonces, sin embargo, a pesar de ese gran aumento en el precio fue a partir de finales de 1980 que el precio de esta materia prima comenzó a bajar drásticamente, para finales de 1982 e inicios de 1983 el precio del azúcar comenzó a subir, pero sin alcanzar valores como los vistos durante 1980, desafortunadamente para finales de 1983 el precio del azúcar comenzó a bajar nuevamente, de forma que a mediados de1985 el precio del azúcar bajo de tal manera que hasta la fecha es el precio más bajo que ha tenido el azúcar desde entonces, a partir de ahí el precio volvió subir, llegando a un máximo (sin contar el de 1980) pero esta tendencia al alza no duró mucho ya que de nuevo el precio bajo, esta tendencia de alza y baja se mantuvo hasta 1999, donde nuevamente volvió a bajar drásticamente pero sin alcanzar el mínimo visto en 1985.
+
+Desde 1999 no se volvieron a alcanzar valores iguales a los últimos 5 años, fue hasta 2006 que el precio del azúcar volvió a subir de manera importante en comparación con años anteriores, el aumento de este precio se debió en parte al aumento del precio del petróleo ya que muchos productores de caña decidieron vender su producto para producir etanol, en lugar de azúcar haciendo que la cantidad de azúcar el en mercado disminuyera por ende aumentara su precio, después de esta alza en el precio se volvió a presentar una baja la cual duró algunos años, ya que fue hasta 2009 que volvió a alcanzar el precio visto en 2006 además en 2010 el precio del azúcar alcanzó su máximo visto en la últimas dos décadas, este aumento del precio se dio ya que dos de los principales exportadores de azúcar del mundo, Brasil, India y Australia, estaban enfrentando fuertes inundaciones, falta de lluvias y un huracán respectivamente por lo que el precio del azúcar se vio afectado, sin embargo este aumento de precio solo duró los primeros meses de 2010, ya que para el segundo trimestre del año el precio del azúcar comenzaba a disminuir, llegando al mínimo en 2015, subiendo hasta tener un nuevo máximo en 2016, sin embargo, este no supero los precios vistos en 2010, el aumento del precio esta vez estuvo dado por presiones cambiarias para el dólar y la libra.
+
+Después del máximo visto en 2016 el precio volvió a bajar, mostrando una tendencia al alza a partir de 2018, dicho comportamiento se ha mantenido hasta hoy sin lograr alcanzar el precio visto en 2016 ni mucho menos el visto en 1980.
+
+### **Algodón**
+
+![Precio del algodón.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_algodon.png)
+
+Notemos que durante 2005 y 2007 el precio del algodón se mantuvo de manera general, a pesar de tener ligeras subidas y bajadas, en 2008 presentó un aumento del precio, el cual bajo y se mantuvo a la baja por algunos y para 2009 el precio fue en aumento de forma que en 2011 se colocó en su precio máximo de los últimos 15 años, dichas alzas en el precio se originaron en parte a que Pakistán, el mayor cultivador de algodón, estaba enfrentando fuertes inundaciones que arruinaron las cosechas de esta materia prima, así como en Pakistán las inundaciones también afectaron a China, mientras que en Estados Unidos se produjo la cantidad más pequeña de algodón en 20 años.
+Otro factor importante es que países como China e India cada vez dedicaban más tierras a cosechar comida y menos al cultivo de algodón, de igual forma, pero en menor medida el precio se vio afectado por las Revoluciones Árabes, lo anterior hizo que el precio del algodón estuviera aproximadamente 280% más caro que en 2009.
+Después de los altos precio que tuvo, presentó una baja esto porque dejo que haber escases, a partir de ahí se mantuvo con subidas y bajadas, pero con precios más altos que los que había antes de 2010.
+Fue hasta 2020 que el algodón comenzó a subir su precio, hasta la fecha el precio del algodón sigue al alza, este aumento de precio se debe al aumento en las cosechas de este material, así como de la demanda de este y la expansión del consumo para la industria textil.
+
+### **Trigo**
+
+![Precio del trigo.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_trigo.png)
+
+El precio del trigo durante 1991 y 1995 se mantuvo entre el alza y la baja sin tomar valores extremos, para 1996 presentó un alza en el precio dicha alza fue la precursora de una gran baja en los precios dicha baja se mantuvo hasta 2002 momento en que comenzó a subir el precio, sin embargo, no se supero el precio que tuvo en 1996, fue hasta 2007 que se superó dicho precio, y hasta 2008 que se tuvo uno de los precios más altos que ha tenido el trigo en las últimas décadas.
+Después de la subida de precios en 2008 hubo una ligera caída en el precio, pero sin tocar lo niveles que había tenido de 1998 a 2001, dicha baja se mantuvo hasta 2010, después de este año el precio presentó algunas ligeras bajas pero se seguía manteniendo o incluso subiendo un poco, pero para 2013 el precio fue a la baja con ligeras y no muy duradera subidas, tal como ocurrió en 2019 que el precio subió ligeramente por temor al riesgo de inundaciones de forma que los agricultores cosecharon menos trigo, en el caso del primer semestre de 2020 el motivo de la baja en el precio fue el temor a un desplome en los precios esto debido a la pandemia por covid-19.
+Fue hasta la segunda mitad de 2020 que el precio comenzó a subir de forma que par finales de 2020 el precio del trigo había superado el precio que este había tenido en los últimos 5 años.
+Para 2021 el precio del trigo seguía en incremento, creciendo un aproximadamente un 40% en comparación con los precios de 2020, teniendo el precio más alto desde inicios de 2013, esto debido a la alta demanda que había y la poca disponibilidad.
+Respecto a 2022, el aumento en el precio se mantuvo, el conflicto entre Rusia y Ucrania dado que dicho conflicto impide el traslado del grano a través del mar negro, sumado a que las condiciones de las cosechas son peores de lo esperado.
+
+### **Café**
+
+![Precio del café.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_cafe.png)
+
+Notemos que antes de 1985 el precio del café se mantenía estable, con alzas y bajas, pero sin tomar valores extremos, fue hasta mediado de 1985 que el precio comenzó a subir sin embargo, esto solo duró poco meses ya que pronto comenzó a bajar drásticamente hasta tocar un mínimo que hasta la fecha es de los principales desde entonces 1992, fue hasta 1993 que el precio del café comenzó a subir sin alcanzar el precio que tuvo en 1985, sin embargo, al igual que el 1985 esto no duró mucho y bajó nuevamente, para subir en 1997 pero esta vez sí superaría el precio de 1985, después de esta subida el precio del café se fue a la baja, este comportamiento se mantuvo contante a tal punto que en 2001 tomó el valor más bajo que se tiene hasta ahora, después de esa drástica bajada en 2003 comenzó a subir el precio, ese aumento se mantuvo aún con ligeras bajas en el precio.
+
+Para finales de 2010 el precio del café alcanzó un precio que superó el visto en 1998, siendo hasta la fecha el valor más alto que ha tenido el café, este aumentó se debió a la reducción de las cosechas de este producto en Colombia y Centroamérica, esto en parte a los desórdenes climáticos, escasez de mano de obra para la recolección de la cosecha y fue impulsado por la escasez mundial de cafés suaves.
+
+Poco después del gran aumento que hubo durante 2010-2011 el precio se fue a la baja, hasta finales de 2013 que se recuperó y comenzó a subir, bajando nuevamente a partir de finales de 2014, presentando una ligera subida en 2016, sin embargo mantuvo la tendencia a la baja hasta finales de 2020 y principios de 2021 que comenzó a subir el precio, esto debido a la inflación, las condiciones climatológicas adversas como heladas que afectaron las cosechas por ende hubo menor número de exportaciones, esto acompañado de una alta demanda.
+Este comportamiento al alza se mantiene hasta 2022 y se espera que siga con variaciones moderadas.
+
+### **Maíz**
+
+![Precio del maíz.](/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/Imagenes/precio_maiz.png)
+
+Desde 1977 el precio del maíz se mantenía al alza de forma que en 1980 alcanzó su máximo, desafortunadamente este no duró mucho ya que pronto el precio se fue a la baja, la cual tampoco duró mucho tiempo y pronto subió de precio para volver a bajar y alcanzar en 1987 el precio más bajo que ha tenido el maíz hasta ahora, después de esa bajada comenzó s subir manteniéndose con pequeñas variaciones en el precio, hasta 1996 que alcanzó un máximo que no se veía en los últimos 10 años, al igual que en otras ocasiones este precio no se mantuvo por mucho tiempo por lo que pronto se fue a la baja, fue hasta 2006 que el precio fue al alza alcanzando un máximo en 2008, después de esto el precio bajó rápidamente, en 2011 volvió a alcanzar un nuevo máximo, este aumento tuvo diferentes causas entre las que se encuentran la estacionalidad de la producción, la evolución de los inventarios, precios del petróleo y factores especulativos.
+A pesar de haber alcanzado un máximo en 2011 este precio bajó para finales de 2011, peor para 2012 alcanzó un nuevo máximo, siendo el precio más alto que ha tenido el maíz hasta ahora, este aumento se debió en parte a las sequías, esto acompañado de la alta demanda.
+
+Después de los precios más altos alcanzados en 2012 el precio del maíz se fue a la baja manteniendo así hasta mediado de 2020 que el precio comenzó a subir esto debido a los efectos climáticos, el aumento en el precio del petróleo, dicho aumento en el precio se mantiene hasta la fecha.
+
+```{r warning=FALSE, include=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+library(tseries)
+library(astsa)
+library(forecast)
+library(tidyverse)
+library(quantmod)
+library(TTR)
+library(tidyquant)
+library(nortest)
+library(car)
+library(stats)
+```
+
+## **Ajuste de modelo de Series de Tiempo**
+
+En esta sección intentaremos ajustar un modelo de series de tiempo a nuestros commodities con el fin de poder predecir un precio futuro para pactar un contrato forward.
+
+Según un texto de análisis estadístico propuesto por Box y Tiao en 1975, estos recomiendan tener por lo menos 50 datos para modelos de medias móviles y por lo menos 100 datos para modelos con coeficientes autoregresivos.
+
+Sin embargo con fines de analizar la misma ventana de tiempo tomaremos 200 datos los cuales tienen inicio desde julio del 2007. Esta ventana de tiempo nos va a permitir contemplar distintas reseciones que se han dado en el mercado de commodities de 2007 hasta marzo del 2022.
+
+Primero debemos de verificar si nuestra serie de tiempo es estacionaria ya que los modelos arima y sarima funcionan bajo ese supuesto.
+
+### **Carga de Datos**
+
+```{r}
+
+setwd("/Users/leogame/Documents/Octavo_Semestre/Seminario_Riesgos/Tareas/Tarea_Examen_Forwards/")
+
+Gold <-  read_excel("Datos.xlsx", sheet = "Gold", 
+    range = "A5:B524", na = "0")
+
+Sugar <-  read_excel("Datos.xlsx", sheet = "Sugar", 
+    range = "A5:B14840", na = "0")
+
+Cotton <-  read_excel("Datos.xlsx", sheet = "Cotton", 
+    range = "A5:B12456", na = "0")
+
+Wheat <-  read_excel("Datos.xlsx", sheet = "Wheat", 
+    range = "A5:B15805", na = "0")
+
+Coffee <-  read_excel("Datos.xlsx", sheet = "Coffee", 
+    range = "A5:B12185", na = "0")
+
+Corn <-  read_excel("Datos.xlsx", sheet = "Corn", 
+    range = "A5:B15804", na = "0")
+
+```
+
+```{r}
+Mensualizar_Datos <- function(df){
+df %>% group_by(Date = lubridate::ceiling_date(Date, "month")-1) %>%
+    summarize(Price = mean(Price))
+}
+
+Coffee <- Mensualizar_Datos(Coffee)
+Corn <- Mensualizar_Datos(Corn)
+Cotton <- Mensualizar_Datos(Cotton)
+Sugar <- Mensualizar_Datos(Sugar)
+Wheat <- Mensualizar_Datos(Wheat)
+
+Gold <- as.data.frame(Gold)
+Coffee <- as.data.frame(Coffee)
+Corn <- as.data.frame(Corn)
+Cotton <- as.data.frame(Cotton)
+Sugar <- as.data.frame(Coffee)
+Wheat <- as.data.frame(Wheat)
+
+```
+
+```{r}
+par(mfrow=c(2,3))
+plot(Gold,xlab="Gold",ylab="",col="darkgoldenrod3", type = "l")
+plot(Sugar,xlab="Sugar",ylab="",col="Grey", type = "l")
+plot(Cotton,xlab="Cotton",ylab="",col="Black", type = "l")
+plot(Wheat,xlab="Wheat",ylab="",col="darkgoldenrod1", type = "l")
+plot(Coffee,xlab="Coffee",ylab="",col="saddlebrown", type = "l")
+plot(Corn,xlab="Corn",ylab="",col="Yellow", type = "l")
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# Calculamos la media de cada activo.
+
+Media <- c(mean(Gold$Price),mean(Sugar$Price),mean(Cotton$Price),mean(Wheat$Price),mean(Coffee$Price),mean(Corn$Price))
+
+# Calculamos la desviación estándar de cada activo.
+Desviacion_Estandar <- c(sd(Gold$Price),sd(Sugar$Price),sd(Cotton$Price),sd(Wheat$Price),sd(Coffee$Price),sd(Corn$Price))
+
+# Calculamos el mínimo de cada activo.
+Minimo <- c(min(Gold$Price),min(Sugar$Price),min(Cotton$Price),min(Wheat$Price),min(Coffee$Price),min(Corn$Price))
+
+# Calculamos el máximo de cada activo.
+Maximo <- c(max(Gold$Price),max(Sugar$Price),max(Cotton$Price),max(Wheat$Price),max(Coffee$Price),max(Corn$Price))
+
+# Combinamos en una matriz los estadísticos que calculamos.
+Analisis_Descriptivo <- cbind(Media,Desviacion_Estandar,Minimo,Maximo)
+rownames(Analisis_Descriptivo) <- c("Gold","Sugar","Cotton","Wheat","Coffee","Corn")
+kable(Analisis_Descriptivo)
+```
+
+### **Gold**
+
+```{r}
+# Creamos la serie de tiempo para el oro. 
+Gold_ts <- ts(tail(Gold$Price, n =200), start = c(2005,7), end = c(2022,2), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo. 
+autoplot(Gold_ts,main = "Gold", xlab = "Tiempo", ylab = "Precio del Oro",
+         col = "goldenrod4")
+```
+
+Como podemos notar, la serie no parece ser estacionaria, debido a que se nota una tendencia alcista.
+De igual manera no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Gold_ts,alternative = "stationary")
+```
+
+Revisando el P-Value, podemos ver que este es mayor que el .05 que se estableció de significancia.
+Entonces en este punto es prudente intentar transfomrar los datos o aplicar diferencias a la serie para que esta pueda ser estacionaria y repetiremos la prueba de hipótesis.
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+Gold_ts_Dif1 <- diff(Gold_ts,differences = 1)
+autoplot(Gold_ts_Dif1,main = "Gold", xlab = "Tiempo", ylab = "Precio del Oro",
+         col = "goldenrod4")
+adf.test(Gold_ts_Dif1,alternative = "stationary")
+```
+
+Analizando el nuevo P-Value obtenido al realizar la prueba de hipótesis, notamos que fue necesario aplicar una diferencia a la serie del oro para que esta cumpla el supuesto de estacionareidad.
+
+Ya que se cumple este supuesto, ahora debemos analizar cuántos coeficientes autoregresivos y de medias móviles tendrá el modelo Arima o Sarima que ajustaremos a nuestra serie de tiempo del oro:
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Gold_ts_Dif1,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Gold_ts_Dif1,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Oro")
+plot(PACF, main = "PACF del Oro")
+```
+
+Según lo que podemos analizar del autocorrelograma y el autocorrelograma parcial, podríamos considerar un elemento de medias móviles y 2 elementos autoregresivos.
+
+Ajustando un modelo Arima para el commodity del oro tenemos que:
+
+```{r}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Gold_Arima <- Arima(Gold_ts, order = c(2,1,1), include.drift =T)
+plot(fitted(Gold_Arima),main = "Gold", xlab = "Tiempo", ylab = "Precio del Oro",col = "red")
+lines(Gold_ts,col = "goldenrod4")
+```
+
+Como podemos ver el modelo generado con los coeficientes que le indicamos, parece ajustarse de buena manera a nuestros datos, sin embargo R tiene una función que en primera instancia parece encontrar el mejor modelo Arima.Usaremos esta función y compararemos los AIC del modelo que creamos manualmente vs el modelo que crea automáticamente R.
+
+```{r}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Gold_Auto_Arima <- auto.arima(Gold_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_GOLD <- cbind(Gold_Arima$aic,Gold_Auto_Arima$aic)
+AIC_GOLD <- as.data.frame(AIC_GOLD)
+colnames(AIC_GOLD) <- c("Gold_Arima","Gold_Auto_Arima")
+print(AIC_GOLD)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un menor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r}
+accuracy(Gold_Arima)
+accuracy(Gold_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, estos tienden a cero.
+Por eso, nos quedaremos con el modelo arima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Gold_Auto_Arima:
+
+```{r}
+Box.test(Gold_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Gold_Auto_Arima, gof.lag = 200)
+checkresiduals(Gold_Auto_Arima, lag = 200)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 10 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r}
+Fcst_Gold_Arima <- forecast(Gold_Arima, h=10)
+Fcst_Gold_Auto_Arima <- forecast(Gold_Auto_Arima, h=10)
+autoplot(Fcst_Gold_Arima , main = "Forecast (2,1,1) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio Oro")
+autoplot(Fcst_Gold_Auto_Arima, main = "Forecast (0,1,1) Modelo Arima Automático", xlab = "Tiempo" , ylab = "Precio Oro")
+
+Fcst_Gold_Arima_pred <- c(tail(Fcst_Gold_Arima$mean,1),tail(Fcst_Gold_Arima$lower,1)[1,1],tail(Fcst_Gold_Arima$upper,1)[1,1],tail(Fcst_Gold_Arima$lower,1)[1,2],tail(Fcst_Gold_Arima$upper,1)[1,2],"Oro")
+
+Fcst_Gold_Auto_Arima_pred <- c(tail(Fcst_Gold_Auto_Arima$mean,1),tail(Fcst_Gold_Auto_Arima$lower,1)[1,1],tail(Fcst_Gold_Auto_Arima$upper,1)[1,1],tail(Fcst_Gold_Auto_Arima$lower,1)[1,2],tail(Fcst_Gold_Auto_Arima$upper,1)[1,2],"Oro")
+
+Precios_Oro <- rbind(Fcst_Gold_Arima_pred,Fcst_Gold_Auto_Arima_pred)
+colnames(Precios_Oro) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+```
+
+-   Conclusión:
+
+Como podemos ver, la proyección parece no ser tan buena debido a que parece sacar solo una línea recta la cual no parece verse afectada por periodos estacionales de la serie pues no se detectó ningún ciclo el cuál pudo ayudar para poder ajustar un modelo Sarima pero como nuestra serie no cumplía con este supuesto, no se puede ajustar un modelo Sarima.
+
+### **Sugar**
+
+```{r}
+# Creamos la serie de tiempo para el oro. 
+Sugar_ts <- ts(tail(Sugar$Price, n =200), start = c(2005,7), end = c(2022,2), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo. 
+autoplot(Sugar_ts,main = "Sugar", xlab = "Tiempo", ylab = "Precio del Azúcar",
+         col = "Grey")
+```
+
+Como podemos notar, la serie no parece ser estacionaria, debido a que se nota una tendencia alcista.
+De igual manera no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Sugar_ts,alternative = "stationary")
+```
+
+Revisando el P-Value, podemos ver que este es mayor que el .05 que se estableció de significancia.
+Entonces en este punto es prudente intentar transfomrar los datos o aplicar diferencias a la serie para que esta pueda ser estacionaria y repetiremos la prueba de hipótesis.
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+Sugar_ts_Dif1 <- diff(Sugar_ts,differences = 1)
+autoplot(Sugar_ts_Dif1,main = "Azúcar", xlab = "Tiempo", ylab = "Precio del Azúcar",
+         col = "Grey")
+adf.test(Sugar_ts_Dif1,alternative = "stationary")
+```
+
+Analizando el nuevo P-Value obtenido al realizar la prueba de hipótesis, notamos que fue necesario aplicar una diferencia a la serie del oro para que esta cumpla el supuesto de estacionareidad.
+
+Ya que se cumple este supuesto, ahora debemos analizar cuántos coeficientes autoregresivos y de medias móviles tendrá el modelo Arima o Sarima que ajustaremos a nuestra serie de tiempo del oro:
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Sugar_ts_Dif1,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Sugar_ts_Dif1,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Azúcar")
+plot(PACF, main = "PACF del Azúcar")
+```
+
+Según lo que podemos analizar del autocorrelograma y el autocorrelograma parcial, podríamos considerar un elemento de medias móviles y 2 elementos autoregresivos.
+
+Ajustando un modelo Arima para el commodity del oro tenemos que:
+
+```{r}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Sugar_Arima <- Arima(Sugar_ts, order = c(2,1,1), include.drift =T)
+plot(fitted(Sugar_Arima),main = "Azúcar", xlab = "Tiempo", ylab = "Precio del Azúcar",col = "red")
+lines(Sugar_ts,col = "Grey")
+```
+
+Como podemos ver el modelo generado con los coeficientes que le indicamos, parece ajustarse de buena manera a nuestros datos, sin embargo R tiene una función que en primera instancia parece encontrar el mejor modelo Arima.Usaremos esta función y compararemos los AIC del modelo que creamos manualmente vs el modelo que crea automáticamente R.
+
+```{r}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Sugar_Auto_Arima <- auto.arima(Sugar_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_SUGAR <- cbind(Sugar_Arima$aic,Sugar_Auto_Arima$aic)
+AIC_SUGAR <- as.data.frame(AIC_SUGAR)
+colnames(AIC_SUGAR) <- c("Sugar_Arima","Sugar_Auto_Arima")
+print(AIC_SUGAR)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un menor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r}
+accuracy(Sugar_Arima)
+accuracy(Sugar_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, estos tienden a cero.
+Por eso, nos quedaremos con el modelo arima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Sugar_Auto_Arima:
+
+```{r}
+Box.test(Sugar_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Sugar_Auto_Arima, gof.lag = 200)
+checkresiduals(Sugar_Auto_Arima, lag = 200)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 10 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r}
+Fcst_Sugar_Arima <- forecast(Sugar_Arima, h=10)
+Fcst_Sugar_Auto_Arima <- forecast(Sugar_Auto_Arima, h=10)
+
+autoplot(Fcst_Sugar_Arima, main = "Forecast (2,1,1) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio Azúcar")
+autoplot(Fcst_Sugar_Auto_Arima, main = "Forecast (2,0,1)(0,0,1)[12] Modelo Sarima Automático", xlab = "Tiempo" , ylab = "Precio Azúcar")
+
+Fcst_Sugar_Arima_pred <- c(tail(Fcst_Sugar_Arima$mean,1),tail(Fcst_Sugar_Arima$lower,1)[1,1],tail(Fcst_Sugar_Arima$upper,1)[1,1],tail(Fcst_Sugar_Arima$lower,1)[1,2],tail(Fcst_Sugar_Arima$upper,1)[1,2],"Azúcar")
+
+Fcst_Sugar_Auto_Arima_pred <- c(tail(Fcst_Sugar_Auto_Arima$mean,1),tail(Fcst_Sugar_Auto_Arima$lower,1)[1,1],tail(Fcst_Sugar_Auto_Arima$upper,1)[1,1],tail(Fcst_Sugar_Auto_Arima$lower,1)[1,2],tail(Fcst_Sugar_Auto_Arima$upper,1)[1,2],"Azúcar")
+
+Precios_Azucar <- rbind(Fcst_Sugar_Arima_pred,Fcst_Sugar_Auto_Arima_pred)
+colnames(Precios_Azucar) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+```
+
+-   Conclusión:
+
+Como podemos ver, la proyección en el caso del modelo arima ajustado manualmente parece no tener un ajuste tan confiable debido a comportamiento de la serie en el pasado, nuevamente el modelo Sarima generado automáticamente parece generar una mejor proyección y tiene sentido pues parece ajustarse mejor a los valores pasados de la serie debido a que este tipo de modelos contempla la frecuencia y la estacionalidad de la serie.
+Por lo tanto nos quedamos con el modelo sarima ajustado.
+
+### **Cotton**
+
+```{r}
+# Creamos la serie de tiempo para el oro. 
+Cotton_ts <- ts(tail(Cotton$Price, n =200), start = c(2005,7), end = c(2022,2), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo.
+autoplot(Cotton_ts,main = "Algodón", xlab = "Tiempo", ylab = "Precio del Algodón",
+         col = "Black")
+```
+
+Como podemos notar, la serie no parece ser estacionaria, debido a que se nota una tendencia alcista.
+De igual manera no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Cotton_ts,alternative = "stationary")
+```
+
+Revisando el P-Value, podemos ver que este es mayor que el .05 que se estableció de significancia.
+Entonces en este punto es prudente intentar transfomrar los datos o aplicar diferencias a la serie para que esta pueda ser estacionaria y repetiremos la prueba de hipótesis.
+
+```{r}
+# Prueba de hipótesis para comprobar estacionareidad. 
+Cotton_ts_Dif1 <- diff(Cotton_ts,differences = 1)
+autoplot(Cotton_ts_Dif1,main = "Algodón", xlab = "Tiempo", ylab = "Precio del Algodón",
+         col = "Black")
+adf.test(Sugar_ts_Dif1,alternative = "stationary")
+```
+
+Analizando el nuevo P-Value obtenido al realizar la prueba de hipótesis, notamos que fue necesario aplicar una diferencia a la serie del oro para que esta cumpla el supuesto de estacionareidad.
+
+Ya que se cumple este supuesto, ahora debemos analizar cuántos coeficientes autoregresivos y de medias móviles tendrá el modelo Arima o Sarima que ajustaremos a nuestra serie de tiempo del oro:
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Cotton_ts_Dif1,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Cotton_ts_Dif1,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Algodón")
+plot(PACF, main = "PACF del Algodón")
+```
+
+Según lo que podemos analizar del autocorrelograma y el autocorrelograma parcial, podríamos considerar 3 elementos de medias móviles y 2 elementos autoregresivos.
+
+Ajustando un modelo Arima para el commodity del oro tenemos que:
+
+```{r}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Cotton_Arima <- Arima(Cotton_ts, order = c(2,1,3), include.drift =T)
+plot(fitted(Cotton_Arima),main = "Algodón", xlab = "Tiempo", ylab = "Precio del Algodón",col = "red")
+lines(Cotton_ts,col = "Black")
+```
+
+Como podemos ver el modelo generado con los coeficientes que le indicamos, parece ajustarse de buena manera a nuestros datos, sin embargo R tiene una función que en primera instancia parece encontrar el mejor modelo Arima.Usaremos esta función y compararemos los AIC del modelo que creamos manualmente vs el modelo que crea automáticamente R.
+
+```{r}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Cotton_Auto_Arima <- auto.arima(Cotton_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_COTTON <- cbind(Cotton_Arima$aic,Cotton_Auto_Arima$aic)
+AIC_COTTON <- as.data.frame(AIC_COTTON)
+colnames(AIC_COTTON) <- c("Cotton_Arima","Cotton_Auto_Arima")
+print(AIC_COTTON)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un menor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r}
+accuracy(Sugar_Arima)
+accuracy(Sugar_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, estos tienden a cero.
+Por eso, nos quedaremos con el modelo arima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Sugar_Auto_Arima:
+
+```{r}
+Box.test(Cotton_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Cotton_Auto_Arima, gof.lag = 200)
+checkresiduals(Cotton_Auto_Arima, lag = 200)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 10 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r}
+
+Fcst_Cotton_Arima <- forecast(Cotton_Arima, h=10)
+Fcst_Cotton_Auto_Arima <- forecast(Cotton_Auto_Arima, h=10)
+
+autoplot(Fcst_Cotton_Arima, main = "Forecast (2,1,3) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio Algodón")
+autoplot(Fcst_Cotton_Auto_Arima, main = "Forecast (2,0,1)(0,0,2)[12] Modelo Sarima Automático", xlab = "Tiempo" , ylab = "Precio Algodón")
+
+Fcst_Cotton_Arima_pred <- c(tail(Fcst_Cotton_Arima$mean,1),tail(Fcst_Cotton_Arima$lower,1)[1,1],tail(Fcst_Cotton_Arima$upper,1)[1,1],tail(Fcst_Cotton_Arima$lower,1)[1,2],tail(Fcst_Cotton_Arima$upper,1)[1,2],"Algodón")
+
+Fcst_Cotton_Auto_Arima_pred <- c(tail(Fcst_Cotton_Auto_Arima$mean,1),tail(Fcst_Cotton_Auto_Arima$lower,1)[1,1],tail(Fcst_Cotton_Auto_Arima$upper,1)[1,1],tail(Fcst_Cotton_Auto_Arima$lower,1)[1,2],tail(Fcst_Cotton_Auto_Arima$upper,1)[1,2],"Algodón")
+
+Precios_Algodon <- rbind(Fcst_Cotton_Arima_pred,Fcst_Cotton_Auto_Arima_pred)
+colnames(Precios_Algodon) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+```
+
+-   Conclusión:
+
+Como podemos ver, la proyección en el caso del modelo arima ajustado manualmente no tiene relación con la proyección del modelo Sarima ajustado automáticamente.
+Sin embargo podemos escoger el modelo Sarima debido a que tienen un AIC más pequeño y que en general al considerar los componentes de estacionalidad y frecuencia puede que la proyección que este modelo genera pueda apegarse un poco más a la realidad.
+
+### **Coffee**
+
+```{r}
+# Creamos la serie de tiempo para el café 
+Coffee_ts <- ts(tail(Coffee$Price, n =180), start = c(2007,4), end = c(2022,3), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo. 
+plot(Coffee_ts,main = "Coffee", xlab = "Tiempo", ylab = "Precio del café",
+         col = "saddlebrown")
+```
+
+Como podemos notar, la serie parece no ser estacionaria, debido a que su comportamiento es muy volatil.
+De igual manera, no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r echo=T}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Coffee_ts,alternative = "stationary")
+```
+
+Si bien, con esto obtenemos un p-value de .30 el cual es mayor que nuestro nivel de significancia (.05) por lo que podemos decir que nuestra serie no es estacionaria, procederemos a transformar nuestra serie para lograr la estacionariedad.
+
+Primero lo intentaremos usando logaritmo sobre la serie:
+
+```{r echo=T}
+#Logaritmo
+Coffee_ts_log = log(Coffee_ts)
+autoplot(Coffee_ts_log)  
+adf.test(Coffee_ts_log,alternative = 'stationary')
+```
+
+Como podemos observar, con esta tranformación nuestro p-value sigue siendo mayor que el 5% por lo que esta transformación no funcionó.
+Aplicaremos 1 diferencia:
+
+```{r echo=T}
+#Diferencias
+Coffee_ts_dif = diff(Coffee_ts,differences = 1)
+autoplot(Coffee_ts_dif) 
+adf.test(Coffee_ts_dif,alternative = 'stationary')
+```
+
+Aplicando una diferencia nuestro p-value se vuelve menor que el 5%, de esta manera se cumple nuestra prueba de hipótesis, la serie transformada ya parece un electrocardiograma.
+Ahora proecederemos a deteminar las medias móviles y autoregresores para el modelo que ajustaremos.
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Coffee_ts_dif,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Coffee_ts_dif,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Café")
+plot(PACF, main = "PACF del Café")
+```
+
+Observando el gráfico ACF observamos que solo una linea sobresale de manera significante de las bandas, así que usaremos una media movil.
+Por otro lado, si observamos el gráfico PACF, sobresalen de manera significativa 2 líneas de las bandas, por lo que usaremos 2 coeficientes autoregresores.
+
+Ajustando un modelo Arima para el commodity del café tenemos que:
+
+```{r echo=T}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Coffee_Arima <- Arima(Coffee_ts, order = c(2,1,1), include.drift =T)
+plot(fitted(Coffee_Arima),main = "Café", xlab = "Tiempo", ylab = "Precio del café",col = "red")
+lines(Coffee_ts,col = "burlywood4")
+```
+
+Ya que hemos creado nuestro modelo manualmente ahora usaremos la función auto.arima() y compararemos los AIC del modelo que manualmente creamos vs el modelo que automáticamente crea R.
+
+```{r echo=T}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Coffee_Auto_Arima <- auto.arima(Coffee_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_Coffee <- cbind(Coffee_Arima$aic,Coffee_Auto_Arima$aic)
+AIC_Coffee <- as.data.frame(AIC_Coffee)
+colnames(AIC_Coffee) <- c("Coffee_Arima","Coffee_Auto_Arima")
+print(AIC_Coffee)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un menor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r echo=T}
+accuracy(Coffee_Arima)
+accuracy(Coffee_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, estos tienden a cero.
+Por eso, nos quedaremos con el modelo sarima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Coffee_Auto_Arima:
+
+```{r echo=T}
+Box.test(Coffee_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Coffee_Auto_Arima, gof.lag = 100)
+checkresiduals(Coffee_Auto_Arima, lag = 100)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 9 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r echo=T}
+Fcst_Coffee_Arima <- forecast(Coffee_Arima, h=9)
+Fcst_Coffee_Auto_Arima <- forecast(Coffee_Auto_Arima, h=9)
+
+autoplot(Fcst_Coffee_Arima, main = "Forecast (2,1,1) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio Café")
+autoplot(Fcst_Coffee_Auto_Arima, main = "Forecast (1,1,0)(0,0,1)[12] Modelo Sarima Automático", xlab = "Tiempo" , ylab = "Precio Café")
+
+Fcst_Coffee_Arima_pred <- c(tail(Fcst_Coffee_Arima$mean,1),tail(Fcst_Coffee_Arima$lower,1)[1,1],tail(Fcst_Coffee_Arima$upper,1)[1,1],tail(Fcst_Coffee_Arima$lower,1)[1,2],tail(Fcst_Coffee_Arima$upper,1)[1,2],"Café")
+
+Fcst_Coffee_Auto_Arima_pred <- c(tail(Fcst_Coffee_Auto_Arima$mean,1),tail(Fcst_Coffee_Auto_Arima$lower,1)[1,1],tail(Fcst_Coffee_Auto_Arima$upper,1)[1,1],tail(Fcst_Coffee_Auto_Arima$lower,1)[1,2],tail(Fcst_Coffee_Auto_Arima$upper,1)[1,2],"Café")
+
+Precios_Cafe <- rbind(Fcst_Coffee_Arima_pred,Fcst_Coffee_Auto_Arima_pred)
+colnames(Precios_Cafe) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+
+```
+
+-   Conclusión:
+
+Si observamos nuestro modelo ARIMA que ajustamos podemos observar que las proyecciones a futuro parecer una linea sin altibajos, con tendencia positiva, pero si observamos el modelo SARIMA generado automáticamente podemos obsevar que los precios proyectados tiene cierta perturbación y una tendencia negativa.En este caso pudimos ajustar un modelo SARIMA ya que se nota que el comportamiento entre meses de distintos años es similar.
+
+### **Corn**
+
+```{r}
+# Creamos la serie de tiempo para el maiz.. 
+Corn_ts <- ts(tail(Corn$Price, n =180), start = c(2007,4), end = c(2022,3), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo. 
+plot(Corn_ts,main = "Corn", xlab = "Tiempo", ylab = "Precio del Maíz",
+         col = "yellow2")
+```
+
+Como podemos notar, la serie parece no ser estacionaria, debido a que su comportamiento es muy volatil.
+De igual manera, no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r echo=T}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Corn_ts,alternative = "stationary")
+```
+
+Si bien, con esto obtenemos un p-value de .30 el cual es mayor que nuestro nivel de significancia (.05) por lo que podemos decir que nuestra serie no es estacionaria, procederemos a transformar nuestra serie para lograr la estacionariedad.
+
+Primero lo intentaremos usando logaritmo sobre la serie:
+
+```{r echo=T}
+#Logaritmo
+Corn_ts_log = log(Corn_ts)
+autoplot(Corn_ts_log)  
+adf.test(Corn_ts_log,alternative = 'stationary')
+```
+
+Como podemos observar, con esta tranformación nuestro p-value sigue siendo mayor que el 5% por lo que esta transformación no funcionó.
+Aplicaremos 1 diferencia:
+
+```{r echo=T}
+#Diferencias
+Corn_ts_dif = diff(Corn_ts,differences = 1)
+autoplot(Corn_ts_dif)
+adf.test(Corn_ts_dif,alternative = 'stationary')
+```
+
+Aplicando una diferencia nuestro p-value se vuelve menor que el 5%, de esta manera se cumple nuestra prueba de hipótesis, la serie transformada ya parece un electrocardiograma.
+Ahora procederemos a deteminar las medias móviles y autoregresores para el modelo que ajustaremos.
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Corn_ts_dif,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Corn_ts_dif,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Maíz")
+plot(PACF, main = "PACF del Maíz")
+```
+
+Observando el gráfico ACF observamos que solo una barra sobresale de manera significativa de las bandas, así que usaremos una media movil.
+Por otro lado, si observamos el gráfico PACF, dos barras sobresalen de manera significante de las bandas, por lo que usaremos dos autoregresores.
+
+Ajustando un modelo Arima para el commodity del maiz tenemos que:
+
+```{r echo=T}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Corn_Arima <- Arima(Corn_ts, order = c(2,1,1), include.drift =T)
+plot(fitted(Corn_Arima),main = "Maíz", xlab = "Tiempo", ylab = "Precio del Maíz",col = "red")
+lines(Corn_ts,col = "yellow2")
+```
+
+Usaremos la función autoarima y compararemos los AIC del modelo que manualmente creamos vs el modelo que automáticamente crea R.
+
+```{r echo=T}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Corn_Auto_Arima <- auto.arima(Corn_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_Corn <- cbind(Corn_Arima$aic,Corn_Auto_Arima$aic)
+AIC_Corn <- as.data.frame(AIC_Corn)
+colnames(AIC_Corn) <- c("Corn_Arima","Corn_Auto_Arima")
+print(AIC_Corn)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un mayor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r echo=T}
+accuracy(Corn_Arima)
+accuracy(Corn_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, son más cercanos a cero comparados con los nuestro modelo generado.
+Por eso, nos quedaremos con el modelo sarima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Corn_Auto_Arima:
+
+```{r echo=T}
+Box.test(Corn_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Corn_Auto_Arima, gof.lag = 100)
+checkresiduals(Corn_Auto_Arima, lag = 100)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 9 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r echo=T}
+
+Fcst_Corn_Arima <- forecast(Corn_Arima, h=9)
+Fcst_Corn_Auto_Arima <- forecast(Corn_Auto_Arima, h=9)
+
+autoplot(Fcst_Corn_Arima, main = "Forecast (2,1,1) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio Maíz")
+autoplot(Fcst_Corn_Auto_Arima, main = "Forecast (3,1,0)(2,0,0)[12] Modelo Sarima Automático", xlab = "Tiempo" , ylab = "Precio Maíz")
+
+Fcst_Corn_Arima_pred <- c(tail(Fcst_Corn_Arima$mean,1),tail(Fcst_Corn_Arima$lower,1)[1,1],tail(Fcst_Corn_Arima$upper,1)[1,1],tail(Fcst_Corn_Arima$lower,1)[1,2],tail(Fcst_Corn_Arima$upper,1)[1,2],"Maíz")
+
+Fcst_Corn_Auto_Arima_pred <- c(tail(Fcst_Corn_Auto_Arima$mean,1),tail(Fcst_Corn_Auto_Arima$lower,1)[1,1],tail(Fcst_Corn_Auto_Arima$upper,1)[1,1],tail(Fcst_Corn_Auto_Arima$lower,1)[1,2],tail(Fcst_Corn_Auto_Arima$upper,1)[1,2],"Maíz")
+
+Precios_Maiz <- rbind(Fcst_Corn_Arima_pred,Fcst_Corn_Auto_Arima_pred)
+colnames(Precios_Maiz) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+
+```
+
+-   Conclusión:
+
+Si observamos nuestro modelo ARIMA que ajustamos podemos observar que las proyecciones a futuro parecer una linea sin altibajos, con tendencia positiva, pero si observamos el modelo SARIMA generado automáticamente podemos obsevar que los precios proyectados tiene cierta perturbación y una tendencia negativa.En este caso pudimos ajustar un modelo SARIMA ya que se nota que el comportamiento entre meses de distintos años es similar.
+
+### **Wheat**
+
+```{r}
+# Creamos la serie de tiempo para el trigo 
+Wheat_ts <- ts(tail(Wheat$Price, n =180), start = c(2007,4), end = c(2022,3), frequency = 12)
+# Graficamos la serie de tiempo para darnos una perspectiva descriptiva de la serie de tiempo. 
+plot(Wheat_ts,main = "Wheat", xlab = "Tiempo", ylab = "Precio del trigo",
+         col = "yellow4")
+```
+
+Como podemos notar, la serie parece no ser estacionaria, debido a que su comportamiento es muy volatil.
+De igual manera, no parece tener media ni una varianza constante, entonces hagamos una prueba de hipótesis para comprobar esto, supongamos un nivel de significancia $\alpha$ = .05:
+
+```{r echo=T}
+# Prueba de hipótesis para comprobar estacionareidad. 
+adf.test(Wheat_ts,alternative = "stationary")
+```
+
+Si bien, con esto obtenemos un p-value de .9666 el cual es mayor que nuestro nivel de significancia (.05) por lo que podemos decir que nuestra serie no es estacionaria, procederemos a transformar nuestra serie para lograr la estacionariedad.
+
+Primero lo intentaremos usando logaritmo sobre la serie:
+
+```{r echo=T}
+#Logaritmo
+Wheat_ts_log = log(Wheat_ts)
+autoplot(Wheat_ts_log)  
+adf.test(Wheat_ts_log,alternative = 'stationary')
+```
+
+Como podemos observar, con esta tranformación nuestro p-value sigue siendo mayor que el 5% por lo que esta transformación no funcionó.
+Aplicaremos 1 diferencia:
+
+```{r echo=T}
+#Diferencias
+Wheat_ts_dif = diff(Wheat_ts,differences = 1)
+autoplot(Wheat_ts_dif) 
+adf.test(Wheat_ts_dif,alternative = 'stationary')
+```
+
+Aplicando una diferencia nuestro p-value se vuelve menor que el 5%, de esta manera se cumple nuestra prueba de hipótesis, la serie transformada ya parece un electrocardiograma.
+Ahora proecederemos a deteminar las medias móviles y autoregresores para el modelo que ajustaremos.
+
+```{r include=FALSE}
+# Prueba de hipótesis para comprobar estacionareidad. 
+ACF <- acf(Wheat_ts_dif,lag.max = 100, frequency = T) # Medias móviles
+PACF <- pacf(Wheat_ts_dif,lag.max = 100, frequency = T) # Autoregresores
+```
+
+```{r}
+par(mfrow = c(1, 2)) 
+plot(ACF, main = "ACF del Trigo")
+plot(PACF, main = "PACF del Trigo")
+```
+
+Observando el gráfico ACF observamos que ninguna linea sobresale de manera significante de las bandas, así que no usaremos medias moviles.
+Por otro lado, si observamos el gráfico PACF, niguna linea sobresale de las bandas, por lo que no usaremos autoregresores.
+
+Ajustando un modelo Arima para el commodity del trigo tenemos que:
+
+```{r echo=T}
+# Buscamos ajustar un modelo arima, de acuerdo a las medias móviles, autoregresores y diferencias que obtuvimos anteriormente. 
+Wheat_Arima <- Arima(Wheat_ts, order = c(0,1,0), include.drift =T)
+plot(fitted(Wheat_Arima),main = "Trigo", xlab = "Tiempo", ylab = "Precio del Trigo",col = "red")
+lines(Wheat_ts,col = "yellow4")
+```
+
+Usaremos la función autoarima y compararemos los AIC del modelo que manualmente creamos vs el modelo que automáticamente crea R.
+
+```{r echo=T}
+# Buscamos el mejor modelo arima/sarima que se ajuste a nuestros datos.
+Wheat_Auto_Arima <- auto.arima(Wheat_ts, seasonal = TRUE)
+# Guardamos en una matriz el resultado de los AIC de cada Modelo.
+AIC_Wheat <- cbind(Wheat_Arima$aic,Wheat_Auto_Arima$aic)
+AIC_Wheat <- as.data.frame(AIC_Wheat)
+colnames(AIC_Wheat) <- c("Wheat_Arima","Wheat_Auto_Arima")
+print(AIC_Wheat)
+```
+
+Como podemos ver, el modelo generado por la función auto.arima() tiene un menor Aic que el modelo arima que generamos manualmente.
+
+Veamos el accuracy de cada modelo para ver los errores de ajuste del modelo vs los datos reales.
+
+```{r echo=T}
+accuracy(Wheat_Arima)
+accuracy(Wheat_Auto_Arima)
+```
+
+Observemos que todos los errores, en el modelo generado automáticamente, estos tienden a cero.
+Por eso, nos quedaremos con el modelo sarima generado automáticamente.
+
+Procederemos a hacer el análisis de residuales de nuestro modelo Coffee_Auto_Arima:
+
+```{r echo=T}
+Box.test(Wheat_Auto_Arima$residuals,type = "Ljung-Box") # nos interesan p-value > alpha
+# Revisamos los p-values de los residuales, así como la gráfica para ver si se comportan como ruido blanco y ver que parezcan ajustarse a una distribución normal.
+tsdiag(Wheat_Auto_Arima, gof.lag = 100)
+checkresiduals(Wheat_Auto_Arima, lag = 100)
+```
+
+Como podemos notar, el P-Value de todos los residuales asciende a más del .05, lo cual indica que tienen un comportamiento normal.
+Si nos fijamos en la serie de los residuales, estos parecen comportarse como un ruido blanco, lo cual tambien nos da indicación que estos se comportan de acuerdo a los supuestos.
+
+Ahora vamos a hacer un forecast de 9 periodos pues nos interesa ver el precio pronosticado a diciembre del 2022.
+
+```{r echo=T}
+
+Fcst_Wheat_Arima <- forecast(Wheat_Arima, h=9)
+Fcst_Wheat_Auto_Arima <- forecast(Wheat_Auto_Arima, h=9)
+
+autoplot(Fcst_Wheat_Arima, main = "Forecast (0,1,0) Modelo Arima Manual",
+          xlab = "Tiempo" , ylab = "Precio del Trigo")
+autoplot(Fcst_Wheat_Auto_Arima, main = "Forecast (1,1,1)(2,0,0)[12] Modelo Sarima Automático", xlab = "Tiempo" , ylab = "Precio del Trigo")
+
+Fcst_Wheat_Arima_pred <- c(tail(Fcst_Wheat_Arima$mean,1),tail(Fcst_Wheat_Arima$lower,1)[1,1],tail(Fcst_Wheat_Arima$upper,1)[1,1],tail(Fcst_Wheat_Arima$lower,1)[1,2],tail(Fcst_Wheat_Arima$upper,1)[1,2],"Trigo")
+
+Fcst_Wheat_Auto_Arima_pred <- c(tail(Fcst_Wheat_Auto_Arima$mean,1),tail(Fcst_Wheat_Auto_Arima$lower,1)[1,1],tail(Fcst_Wheat_Auto_Arima$upper,1)[1,1],tail(Fcst_Wheat_Auto_Arima$lower,1)[1,2],tail(Fcst_Wheat_Auto_Arima$upper,1)[1,2],"Trigo")
+
+Precios_Trigo<- rbind(Fcst_Wheat_Arima_pred,Fcst_Wheat_Auto_Arima_pred)
+colnames(Precios_Trigo) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+
+```
+
+-   Conclusión:
+
+Si observamos nuestro modelo ARIMA que ajustamos podemos observar que las proyecciones a futuro parecer una linea sin altibajos, con tendencia positiva, pero si observamos el modelo SARIMA generado automáticamente podemos obsevar que los precios proyectados tiene cierta perturbación y una tendencia negativa.En este caso pudimos ajustar un modelo SARIMA ya que se nota que el comportamiento entre meses de distintos años es similar.
+
+## **Precios teóricos commodity forward**
+
+Para poder calcular el precio teórico de un commodity necesitamos una tasas de plusvalía, la cual nos dice en que proporción aumentó o decreció el precio de este.
+Esta tasa de plusvalía la podemos calcular de 2 maneras distintas, rendimiento clasico y rendimiento logarítmico.
+En este caso usaremos el rendimiento logarítimo ya que tiene muchas más ventajas sobre el rendimiento clásico, como lo es tener una estabilidad numérica, es aditiva en el tiepo entre otras.
+Finalmente obtendremos un promedio de los rendiminetos logarítmicos y esa será nuestra tasa de plusvalía.
+
+Calculamos la tasa de plusvalía sobre cada commodity, usando un rendimiento aritmético pues tenemos datos que son mensuales a pesar de tener bastantes consideramos que lo mejor es usar un rendimiento arimétcio:
+
+```{r echo=T}
+#Oro
+r_gold <- mean(dailyReturn(Gold_ts, type = 'arithmetic'))
+
+#Café
+r_coffee <- mean(dailyReturn(Coffee_ts, type = 'arithmetic'))
+
+#Maíz
+r_corn <- mean(dailyReturn(Corn_ts, type = 'arithmetic'))
+
+#Algodón
+r_cotton <- mean(dailyReturn(Cotton_ts, type = 'arithmetic'))
+
+#Azúcar
+r_sugar <- mean(dailyReturn(Sugar_ts, type = 'arithmetic'))
+
+#Trigo
+r_wheat <- mean(dailyReturn(Wheat_ts, type = 'arithmetic'))
+
+
+```
+
+Teniendo ya calculadas las tasas de plusvalía , ahora vamos a calcular los precios teóricos forward, usaremos un modelo de interés continuo:
+
+$$
+F_{0,T} = S_{0}*exp(r*T)    
+$$
+
+```{r echo=T}
+
+t_gold <- 10  #Buscamos el precio a 10 meses(al cierre de Diciembre).
+#Oro
+S0_Gold <- tail(Gold[,2],1)
+F0_gold <- S0_Gold*exp(r_gold*t_gold)
+
+Precio_Medio_Gold <- c(F0_gold,"-","-","-","-","Oro")
+Precios_Oro <- rbind(Precios_Oro,Precio_Medio_Gold)
+
+#Café
+t <- 9  #Buscamos el precio a 9 meses(al cierre de Diciembre).
+S0_Coffee <- tail(Coffee[,2],1)
+F0_coffee <- S0_Coffee*exp(r_coffee*t)
+Precio_Medio_Coffee <- c(F0_coffee,"-","-","-","-","Café")
+Precios_Cafe <- rbind(Precios_Cafe,Precio_Medio_Coffee)
+
+#Maíz
+t <- 9  #Buscamos el precio a 9 meses(al cierre de Diciembre).
+S0_Corn <- tail(Corn[,2],1)
+F0_corn <- S0_Corn*exp(r_corn*t)
+Precio_Medio_Corn <- c(F0_corn,"-","-","-","-","Maíz")
+Precios_Maiz <- rbind(Precios_Maiz,Precio_Medio_Corn)
+
+#Algodón
+t_cotton <- 10 #Buscamos el precio a 10 meses(al cierre de Diciembre)
+S0_Cotton <- tail(Cotton[,2],1)
+F0_cotton <- S0_Cotton*exp(r_cotton*t_cotton)
+Precio_Medio_Cotton <- c(F0_cotton,"-","-","-","-","Algodón")
+Precios_Algodon <- rbind(Precios_Algodon,Precio_Medio_Cotton)
+
+
+#Azúcar
+t_sugar <- 10 #Buscamos el precio a 10 meses(al cierre de Diciembre)
+S0_Sugar <- tail(Sugar[,2],1)
+F0_sugar <- S0_Sugar*exp(r_sugar*t_sugar)
+Precio_Medio_Sugar <- c(F0_sugar,"-","-","-","-","Azúcar")
+Precios_Azucar <- rbind(Precios_Azucar,Precio_Medio_Sugar)
+
+#Trigo
+t <- 9  #Buscamos el precio a 9 meses(al cierre de Diciembre).
+S0_Wheat <- tail(Wheat[,2],1)
+F0_wheat <- S0_Wheat*exp(r_wheat*t)
+Precio_Medio_Wheat <- c(F0_wheat,"-","-","-","-","Trigo")
+Precios_Trigo <- rbind(Precios_Trigo,Precio_Medio_Wheat)
+
+Precios_Forward <- rbind(Precios_Oro,Precios_Azucar,Precios_Algodon,Precios_Cafe,Precios_Maiz,Precios_Trigo)
+
+colnames(Precios_Forward) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Commodity")
+Precios_Forward <- as.data.frame(Precios_Forward)
+
+kable(Precios_Forward)
+```
+
+## **Precios Strike Commodities**
+
+Como podemos ver los precios proyectados por los modelos arima, auto-arima y tasas de plusvalía no son tan variables entre unos y otros exceptuando el oro.
+Lo que propondremos para obtener un precio forward es realizar el promedio de nuestras 3 estimaciones, exceptuando el oro.
+En ese caso realizaremos solo un promedio entre las estimaciones de los modelos arima que genereamos.
+De esta manera le damos un peso a todas las estimaciones que realizamos y de alguna manera estas no están alejadas entre sí.
+Por lo que hace sentido que el precio se pueda aproximar al promedio de los precios de nuestras aproximaciones.
+
+```{r}
+# Precio Forward Oro
+Precio_Forward_Oro <- mean(as.numeric(Precios_Oro[1:2,1]))
+# Precio Forward Azucar
+Precio_Forward_Azucar <- mean(as.numeric(Precios_Azucar[1:3,1]))
+# Precio Forward Algodón
+Precio_Forward_Algodón <- mean(as.numeric(Precios_Algodon[1:3,1]))
+# Precio Forward Café
+Precio_Forward_Cafe <- mean(as.numeric(Precios_Cafe[1:3,1]))
+# Precio Forward Maíz
+Precio_Forward_Maiz <- mean(as.numeric(Precios_Maiz[1:3,1]))
+# Precio Forward Trigo
+Precio_Forward_Trigo <- mean(as.numeric(Precios_Trigo[1:3,1]))
+
+Precios_Forward_Propuestos <- rbind(Precio_Forward_Oro,Precio_Forward_Azucar,Precio_Forward_Algodón,Precio_Forward_Cafe,Precio_Forward_Maiz,Precio_Forward_Trigo)
+
+colnames(Precios_Forward_Propuestos) <-  c("Precios Strikes")
+rownames(Precios_Forward_Propuestos) <- c("Oro","Azúcar","Algodón","Café","Maíz","Trigo")
+
+Precios_Forward_Propuestos <- as.data.frame(Precios_Forward_Propuestos)
+
+kable(Precios_Forward_Propuestos)
+
+```
+
+# *Parte 2 Equity Forward*
+
+```{r message=FALSE, warning=FALSE}
+Portafolio = c("AAPL","MSFT","AMZN","GOOGL","NFLX","INTC")
+quantmod::getSymbols(Portafolio,src = "yahoo",from="2017-03-31", to= "2022-03-31")
+```
+
+## **Análisis Técnico**
+
+### **Apple**
+
+Apple, Inc. es una empresa estadounidense que diseña y produce equipos electrónicos, software y servicios en línea.
+El modelo de negocio de Apple, es un modelo vertical.
+Esta modalidad se basa en tener el control de todas las actividades que forman parte de la cadena de valor.
+¿Qué quiere decir esto?
+
+Que Apple controla todo el proceso de diseño y fabricación tanto de hardware como de software.
+Además lleva a cabo el resto de pasos de la cadena de producción supervisando cada detalle.
+
+Además, Apple también se ocupa de la distribución final de sus productos al cliente en sus propias tiendas.
+De esta forma, la empresa está más cerca del consumidor, cuenta con la ventaja de conocer sus necesidades y esto le sirve para crear productos adaptados a las demandas de su público objetivo.
+
+```{r}
+# Apple
+quantmod::chartSeries(`AAPL`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+En la gráfica de Apple podemos notar que ha tenido un precio al alza con ligeras caídas, a pesar de esto, el precio se ha mantenido siempre por arriba del precio de cierre de cada año.
+Podemos que la caída más significativa se dio en Marzo del 2020 y esto fue por la pandemia.
+
+Respecto al promedio móvil y al promedio móvil exponencial vemos que estos se aproximan bien a los datos, al igual que las bandas móviles, las cuales no distan mucho de los valores reales.
+
+Si nos fijamos en los momentos, podemos ver que el precio presentó un cambio notorio durante marzo de 2020, justo cuando empezó la pandemia.
+A partir de este punto los momentos nos infican grandes variaciones en los precios.
+De alguna manera esto tiene sentido pues como vemos el precio de la acción ha ido creciendo desde ese momento.
+
+Finalmente el indicador de fuerza relativa nos indica según los volúmenes de compra-venta en qué momento era conveniente comprar o vender la acción.
+Siguiendo esta lógica en Marzo del 2020 era un gran momento para comprar pues el volumen de venta de las acciones fue bastante grande, haciendo que el precio cayera y estuviera más barato de lo que realmente valía.
+Si nos paramos en el 31 de Marzo del 2022 consideramos que tal vez no sea el mejor momento de compra debido a lo que nos indica la fuerza relativa.
+Lo mejor tal vez sería esperar una ligera caída de entre 10-15 dólares para entrar en un buen precio y vender posteriormente a un precio más alto.
+
+### **Microsoft**
+
+Microsoft Corporation es una empresa tecnológica multinacional con sede en Redmond, Washington, Estados Unidos.
+La empresa desarrolla, fabrica, licencia y da soporte a ordenadores personales, servidores, dispositivos electrónicos y servicios.
+
+El modelo de ingresos de Microsoft se ha basado en la venta de equipos y suscripciones de servicios de software y de la nube.
+
+```{r}
+# Microsoft
+quantmod::chartSeries(`MSFT`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Notamos que a lo largo del tiempo el precio de la acción de Microsoft ha ido creciendo con una ligera caída justo en el comienzo de la pandemia.
+Al último precio que tenemos de Microsoft podemos notar que el indicador de fuerza relativa parece mostrarnos un sentido hacia la alza lo cual podría indicar que no es el mejor momento para comprar.
+Sin embargo podría considerarse una orden de compra porque en sentido estricto el indicador no se encuentra en un punto alto o algún punto máximo.
+Desde un punto de vista de aversión al riesgo no es tan recomendable hacer esto, por lo tanto lo mejor en este momento creemos que sería esperar un mejor momento de compra.
+
+### **Amazon**
+
+Amazon es una compañía estadounidense de comercio electrónico y servicios de computación en la nube a todos los niveles.
+Actualmente está totalmente diversificada y catalogada en diferentes líneas de productos, ofreciendo DVD, CD de música, software, videojuegos, electrónica, ropa, muebles, comida, libros, etc.
+
+El modelo de negocio de Amazon es principalmente Ecommerce, es decir que su modelo de negocio se basa en la venta online de una variedad de productos propios y de terceros, a través del cual obtiene alrededor de la mitad de sus ingresos, el resto se obtiene a través de suscripciones de usuarios a cuentas premium.
+
+```{r}
+# Amazon
+quantmod::chartSeries(`AMZN`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Para Amazon podemos notar que ha tenido un precio al alza con ligeras caídas, a pesar de esto, el precio no ha tocado los valores que tuvo durante 2017, de septiembre de 2018 a marzo 2022, el precio se mantuvo para después comenzar con subidas en el precio, esto en parte por el inicio de la pandemia, fue a partir de septiembre de 2020 que el precio comenzó a mantenerse con ligeras volatilidades.
+
+Respecto al promedio móvil y al promedio móvil exponencial vemos que están bastante cercanos a los datos originales de las acciones de Amazon, al igual que las bandas móviles, las cuales no distan mucho de los valores reales.
+
+Si nos fijamos en los momentos, podemos ver que el precio presentó un cambio notorio durante septiembre 2018 y marzo 2019, después de esto el precio se mantuvo, hasta marzo de 2020, momento en el que comenzó la pandemia por covid-19, a partir de ese momento el precio comenzó a variar, teniendo subidas y bajadas, el precio aproximadamente subía o bajaba 200 unidades, de manera proporcional el precio se nota más el cambió ya que vemos de manera más acertada los cambios, podemos notar que el máximo de subida es aproximadamente 10% y el de baja aproximadamente 5%.
+
+### **Google**
+
+Google es una compañía principal subsidiaria de la estadounidense Alphabet cuya especialización son los productos y servicios relacionados con internet, software, dispositivos electrónicos y otras tecnologías.
+
+El principal producto de Google es el motor de búsqueda de contenido en Internet del mismo nombre, aunque ofrece también otros productos y servicios como la suite ofimática Google Drive, el correo electrónico llamado Gmail, sus servicios de mapas Google Maps, Google Street View y Google Earth, el sitio web de vídeos YouTube y otras utilidades web como Google Libros, Google Noticias, Google Chrome y la red social Google+, este último sacado fuera de línea en el primer cuatrimestre de 2019.
+Por otra parte, lidera el desarrollo del sistema operativo basado en Linux Android, orientado a teléfonos inteligentes, tabletas, televisores y automóviles, y de gafas de realidad aumentada, las Google Glass.
+
+El principal modelo de negocio de Google se basa en la publicidad y su buscador de información, sus ingresos se basan fundamentalmente en la inversión que realizan grandes empresas.
+Google ha logrado evolucionar el modelo de ingresos ya que proporcionan un servicio gratuito (buscador de Google) y obtienen ingresos de la publicidad, ya que os anuncios en Google son los más eficientes, pues no parecen anuncios, no necesitan crear una necesidad, responden a una necesidad ya existente.
+
+```{r}
+# Google
+quantmod::chartSeries(`GOOGL`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Notemos que el precio de las acciones de Google ha tenido un precio al alza, sin embargo, durante marzo de 2020 este precio bajó, esto debido al comienzo de la pandemia por covid-19, dicha baja no duró mucho tiempo, ya que pronto comenzó a subir alcanzando nuevos máximos en el precio, siento hasta inicio de 2022 que se volvió a presentar una tendencia a la baja la cual poco a poco se ha ido restaurando.
+
+Analizando el promedio móvil y el promedio móvil exponencial podemos notar que estos no distan mucho de los valores originales, de la misma forma para las bandas móviles, éstas no distan mucho de los valores reales por lo que si bien hay altas y bajas en los precios estos mantienen cierto margen que hace que los valores se mantengan en una banda pequeña.
+
+Viendo el momento podemos notar que a partir de marzo de 2022 comienza a tener un comportamiento volátil ya que comienza a tener altas y bajas significativas, mintiéndose entre +/- 100 unidades, en cuanto al momento proporcional vemos que este casi siempre ha tenido un comportamiento volátil lo cual hace sentido ya que los precios de las acciones no son constantes, cambian en cada momento, sin embargo a partir de marzo 2022 el cambio en el precio de manera porcentual se ve más marcado, alcanzando un cambio al alza y a la baja del 10%.
+
+Por último si nos fijamos en el volumen de compra y venta, vemos que hay variabilidad sin embargo, la mayor parte del tiempo se ha mantenido entre 40 y 70 unidades.
+
+### **Netflix**
+
+Netflix es una empresa estadounidenseque pasó de ser un simple VOD(video on demand) a una de las compañias de estreaming más grandes del mundo.
+Como servicios ofrece Streaming,DVD, Blu-ray, alquiler de películas, PPV(pago por visión),video bajo demanda, distribución digital.
+Su modelo de negocios se basa en suscripciones mensuales, de esta manera el contenido se evalua en grupo y así se decide si si este permanecerá o no.
+
+```{r}
+# Netflix
+quantmod::chartSeries(`NFLX`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+Desde que la empresa comenzó a cotizar, el precio de sus acciones fue creciete hasta finales del 2021, de ahí a la fecha el precio de la acción tiene una tendencia a la baja debido al lanzamiento de distintas plataformas con el mismo giro, y la falta de nuevos programas.
+Si observamos a detalle la gráfica, podemos decir que el precio de las acciones de netflix son estables ya que las bandas de bollinger no estan tan alejadas de los precios.
+
+### **Intel**
+
+Intel: Es una compañía estadounidense que diseña y fabrica circuitos integrados para la industria de la computación y las comunicaciones a nivel mundial.
+Sus principales productos a nivel de componentes incluyen microprocesadores, chipsets, placas madre y conectividad con y sin cables.
+
+Su modelo de negocios es la venta de sus productos.
+
+```{r}
+# Intel
+quantmod::chartSeries(`INTC`,type = "line",subset = "2017-03::2022-03",
+            theme = quantmod::chartTheme("white", up.col='black'), 
+            TA=c(quantmod::addSMA(n=25,on=1,col = "blue"),quantmod::addBBands(n=25,sd=2),
+                 quantmod::addEMA(n=25,on=1,col = "blue"),quantmod::addMomentum(n=1),
+                 quantmod::addROC(n=1),quantmod::addRSI(n=14,maType = "EMA")))
+```
+
+El precio de las acciones de intel mantienen su tendencia a la alza, a pesar que la empresa tiene sus altibajos en varios momentos, conserva su tendencia alcista.
+Como podemos observar las bandas de bollinger no se alejan mucho del precio de las acciones, esto nos indica que el precio de sus acciones es estable, no tiene cambios tan bruscos.
+
+## **Ajuste Modelo de Weiner**
+
+```{r}
+# Función que calcula rendimientos
+Rendimientos <- function(Nombre){
+  vector <- as.vector(Nombre[,4])
+    c <- c()
+      for(i in 2:length(vector)){
+          a <- (vector[i]/vector[i-1])-1
+          c <- c(c,a)
+      }
+    data.frame(media = mean(c),desv = sd(c))
+}
+```
+
+```{r}
+
+Fechas <- seq(from = as.Date("2022-03-31"), to = as.Date("2022-07-29"), by = 'day')
+
+Fechas <- c(Fechas[1:2],Fechas[5:9],Fechas[12:15],Fechas[19:23],Fechas[26:30],
+            Fechas[33:37],Fechas[40:44],Fechas[47:51],Fechas[54:58],
+            Fechas[62:65],Fechas[68:72],Fechas[75:79],Fechas[83:86],
+            Fechas[89:93],Fechas[97:100],Fechas[103:107],Fechas[110:114],
+            Fechas[117:121])
+Fechas <- c(Fechas,as.Date("2022-03-30"))
+Fechas <- sort(Fechas)
+
+# Modelo de Weiner
+Weiner <- function(R,S){
+  desv <- R[1,2]
+  media <- R[1,1]
+  Df <- data.frame()
+      for(i in 1:10000){
+        Df[1,i] <- S
+        for(j in 1:83){
+        Df[j+1,i] <- Df[j,i]+Df[j,i]*(media*1+desv*qnorm(runif(1))*sqrt(1))
+        }
+      }
+  return(Df)
+}
+```
+
+```{r}
+# Modelo de Weiner Apple
+
+# Rendimientos Apple
+Apple_R <- Rendimientos(AAPL)
+
+# Ultimo Precio Apple
+Apple_St_1 <- tail(AAPL$AAPL.Close,1)
+Weiner_Apple <- Weiner(Apple_R,Apple_St_1)
+
+# Convergencia del Modelo Apple
+Ultimo_Apple <- Weiner_Apple[84,1:10000]
+Media_Apple<- sum(Ultimo_Apple)/length(Ultimo_Apple)
+Var_Apple <- quantile(Ultimo_Apple,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Apple <- cbind("Media" = Media_Apple, Var_Apple,"Acción" = "Apple")
+Convergencia_Apple <- as.data.frame(Convergencia_Apple)
+rownames(Convergencia_Apple) <- c("Convergencia Apple")
+
+kable(Convergencia_Apple)
+```
+
+```{r echo=FALSE}
+# Gráfica Apple
+plot(Fechas,Weiner_Apple[,1],type = "l", main = "Apple Weiner", xlab = "Tiempo", ylab = "Precio Apple")
+for(i in 2:75){
+  lines(Fechas,Weiner_Apple[,i], col = "black")
+}
+```
+
+```{r}
+# Modelo de Weiner Microsft
+
+# Rendimientos Microsft
+Microsoft_R <- Rendimientos(MSFT)
+
+# Ultimo Precio Microsft
+Microsoft_St_1 <- tail(MSFT$MSFT.Close,1)
+Weiner_Microsoft <- Weiner(Microsoft_R,Microsoft_St_1)
+
+# Convergencia del Modelo Microsft
+Ultimo_Microsoft <- Weiner_Microsoft[84,1:10000]
+Media_Microsoft <- sum(Ultimo_Microsoft)/length(Ultimo_Microsoft)
+Var_Microsoft <- quantile(Ultimo_Microsoft,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Microsoft <- cbind("Media" = Media_Microsoft, Var_Microsoft, "Acción" = "Microsoft")
+Convergencia_Microsoft <- as.data.frame(Convergencia_Microsoft)
+rownames(Convergencia_Microsoft) <- c("Convergencia Microsoft")
+
+kable(Convergencia_Microsoft)
+```
+
+```{r echo=FALSE}
+# Gráfica Microsoft
+plot(Fechas,Weiner_Microsoft[,1],type = "l", main = "Weiner Microsoft", xlab = "Tiempo", ylab = "Precio Microsoft")
+for(i in 2:75){
+  lines(Fechas,Weiner_Microsoft[,i], col = "blue")
+}
+```
+
+```{r}
+# Modelo de Weiner Amazon
+
+# Rendimientos Amazon
+Amazon_R <- Rendimientos(AMZN)
+
+# Ultimo Precio Amazon
+Amazon_St_1 <- tail(AMZN$AMZN.Close,1)
+Weiner_Amazon <- Weiner(Amazon_R,Amazon_St_1)
+
+# Convergencia del Modelo Microsft
+Ultimo_Amazon <- Weiner_Amazon[84,1:10000]
+Media_Amazon <- sum(Ultimo_Amazon)/length(Ultimo_Amazon)
+Var_Amazon <- quantile(Ultimo_Amazon,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Amazon <- cbind("Media" = Media_Amazon, Var_Amazon, "Acción" = "Amazon")
+Convergencia_Amazon <- as.data.frame(Convergencia_Amazon)
+rownames(Convergencia_Amazon) <- c("Convergencia Amazon")
+
+kable(Convergencia_Amazon)
+```
+
+```{r echo=FALSE}
+# Gráfica Amazon
+plot(Fechas,Weiner_Amazon[,1],type = "l", main = "Weiner Amazon", xlab = "Tiempo", ylab = "Precio Amazon")
+for(i in 2:75){
+  lines(Fechas,Weiner_Amazon[,i], col = "orange")
+}
+```
+
+```{r}
+# Modelo de Weiner Google
+
+# Rendimientos Google
+Google_R <- Rendimientos(GOOGL)
+
+# Ultimo Precio Google
+Google_St_1 <- tail(GOOGL$GOOGL.Close,1)
+Weiner_Google <- Weiner(Google_R,Google_St_1)
+
+# Convergencia del Modelo Google
+Ultimo_Google <- Weiner_Google[84,1:10000]
+Media_Google <- sum(Ultimo_Google)/length(Ultimo_Google)
+Var_Google <- quantile(Ultimo_Google,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Google <- cbind("Media" = Media_Google, Var_Google, "Acción" = "Google")
+Convergencia_Google <- as.data.frame(Convergencia_Google)
+rownames(Convergencia_Google) <- c("Convergencia Google")
+
+kable(Convergencia_Google)
+```
+
+```{r echo=FALSE}
+# Gráfica Google
+plot(Fechas,Weiner_Google[,1],type = "l", main = "Weiner Google", xlab = "Tiempo", ylab = "Precio Google")
+for(i in 2:75){
+  lines(Fechas,Weiner_Google[,i], col = "darkgreen")
+}
+```
+
+```{r}
+# Modelo de Weiner Netflix
+
+# Rendimientos Netflix
+Netflix_R <- Rendimientos(NFLX)
+
+# Ultimo Precio Netflix
+Netflix_St_1 <- tail(NFLX$NFLX.Close,1)
+Weiner_Netflix <- Weiner(Netflix_R,Netflix_St_1)
+
+# Convergencia del Modelo Netflix
+Ultimo_Netflix <- Weiner_Netflix[84,1:10000]
+Media_Netflix <- sum(Ultimo_Netflix)/length(Ultimo_Netflix)
+Var_Netflix <- quantile(Ultimo_Netflix,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Netflix <- cbind("Media" = Media_Netflix, Var_Netflix, "Acción" = "Netflix")
+Convergencia_Netflix <- as.data.frame(Convergencia_Netflix)
+rownames(Convergencia_Netflix) <- c("Convergencia Netflix")
+
+kable(Convergencia_Netflix)
+```
+
+```{r echo=FALSE}
+# Gráfica Netflix
+plot(Fechas,Weiner_Netflix[,1],type = "l", main = "Weiner Netflix", xlab = "Tiempo", ylab = "Precio Netflix")
+for(i in 2:75){
+  lines(Fechas,Weiner_Netflix[,i], col = "red")
+}
+```
+
+```{r}
+# Modelo de Weiner Intel
+
+# Rendimientos Intel
+Intel_R <- Rendimientos(INTC)
+
+# Ultimo Precio Intel
+Intel_St_1 <- tail(INTC$INTC.Close,1)
+Weiner_Intel <- Weiner(Intel_R,Intel_St_1)
+
+# Convergencia del Modelo Intel
+Ultimo_Intel <- Weiner_Intel[84,1:10000]
+Media_Intel <- sum(Ultimo_Intel)/length(Ultimo_Intel)
+Var_Intel <- quantile(Ultimo_Intel,probs = c(0.2,0.8,0.05,0.95))
+Convergencia_Intel <- cbind("Media" = Media_Intel, Var_Intel, "Acción" = "Intel")
+Convergencia_Intel <- as.data.frame(Convergencia_Intel)
+rownames(Convergencia_Intel) <- c("Convergencia Intel")
+
+kable(Convergencia_Intel)
+```
+
+```{r echo=FALSE}
+# Gráfica Intel
+plot(Fechas,Weiner_Intel[,1],type = "l", main = "Weiner Intel", xlab = "Tiempo", ylab = "Precio Intel")
+for(i in 2:75){
+  lines(Fechas,Weiner_Intel[,i], col = "darkgrey")
+}
+```
+
+```{r}
+t <- 84   #Buscamos el precio al 29 de Julio.
+# Apple
+F0_Apple <- Apple_St_1*exp(Apple_R$media*t)
+F0_Apple <- as.vector(F0_Apple)
+Precio_Medio_Apple <- c(F0_Apple,"-","-","-","-","Apple")
+Precios_Apple <- rbind(Convergencia_Apple,Precio_Medio_Apple)
+rownames(Precios_Apple) <- c("Convergencia Apple","Precio Medio Apple")
+
+# Microsoft
+F0_Microsoft <- Microsoft_St_1*exp(Microsoft_R$media*t)
+F0_Microsoft <- as.vector(F0_Microsoft)
+Precio_Medio_Microsoft <- c(F0_Microsoft,"-","-","-","-","Microsoft")
+Precios_Microsoft <- rbind(Convergencia_Microsoft,Precio_Medio_Microsoft)
+rownames(Precios_Microsoft) <- c("Convergencia Microsoft","Precio Medio Microsoft")
+
+# Amazon
+F0_Amazon <- Amazon_St_1*exp(Amazon_R$media*t)
+F0_Amazon <- as.vector(F0_Amazon)
+Precio_Medio_Amazon <- c(F0_Amazon,"-","-","-","-","Amazon")
+Precios_Amazon <- rbind(Convergencia_Amazon,Precio_Medio_Amazon)
+rownames(Precios_Amazon) <- c("Convergencia Amazon","Precio Medio Amazon")
+
+# Google
+F0_Google <- Google_St_1*exp(Google_R$media*t)
+F0_Google <- as.vector(F0_Google)
+Precio_Medio_Google <- c(F0_Google,"-","-","-","-","Google")
+Precios_Google <- rbind(Convergencia_Google,Precio_Medio_Google)
+rownames(Precios_Google) <- c("Convergencia Google","Precio Medio Google")
+
+
+# Netflix
+F0_Netflix <- Netflix_St_1*exp(Netflix_R$media*t)
+F0_Netflix <- as.vector(F0_Netflix)
+Precio_Medio_Netflix <- c(F0_Netflix,"-","-","-","-","Netflix")
+Precios_Netflix <- rbind(Convergencia_Netflix,Precio_Medio_Netflix)
+rownames(Precios_Netflix) <- c("Convergencia Netflix","Precio Medio Netflix")
+
+# Intel
+F0_Intel <- Intel_St_1*exp(Intel_R$media*t)
+F0_Intel <- as.vector(F0_Intel)
+Precio_Medio_Intel <- c(F0_Intel,"-","-","-","-","Intel")
+Precios_Intel <- rbind(Convergencia_Intel,Precio_Medio_Intel)
+rownames(Precios_Intel) <- c("Convergencia Intel","Precio Medio Intel")
+
+Precios_Forward_Acciones <- rbind(Precios_Apple,Precios_Microsoft,Precios_Amazon,Precios_Google,Precios_Netflix,Precios_Intel)
+
+colnames(Precios_Forward_Acciones) <- c("Precio Forward","80% inf","80% sup", "95% inf", "95% sup","Acción")
+Precios_Forward_Acciones <- as.data.frame(Precios_Forward_Acciones)
+
+kable(Precios_Forward_Acciones)
+```
+
+## **Precios Strike Acciones**
+
+El precio Strike propuesto se calculará tomando en cuenta el promedio entre el $VaR$ al 80%, el $VaR$ al 95%, la media del Precio Forward Teórico bajo el modelo de Weiner y el Precio Forward Teórico bajo una tasa de plusvalía la cual se calculará con un rendimiento aritmético al tener horarios de apertura y cierre para operar consideramos que lo mejor es considerar un rendimiento aritmético.
+
+Entonces haciendo esto para nuestros 6 activos tenemos que:
+
+```{r}
+# Calculamos el precio propuesto para Apple
+precio_AAPL <- mean(Media_Apple,Var_Apple[,2],Var_Apple[,4],F0_Apple)
+
+# Calculamos el precio propuesto para Microsoft
+precio_MSFT <- mean(Media_Microsoft,Var_Microsoft[,2],Var_Microsoft[,4],F0_Microsoft)
+
+# Calculamos el precio propuesto para Amazon
+precio_AMZN <- mean(Media_Amazon,Var_Amazon[,2],Var_Amazon[,4],F0_Amazon)
+
+# Calculamos el precio propuesto para Google
+precio_GOOGL <- mean(Media_Google,Var_Google[,2],Var_Google[,4],F0_Google)
+
+# Calculamos el precio propuesto para Netflix
+precio_NFLX <- mean(Media_Netflix,Var_Netflix[,2],Var_Netflix[,4],F0_Netflix)
+
+# Calculamos el precio propuesto para Intel
+precio_INTC <- mean(Media_Intel,Var_Intel[,2],Var_Intel[,4],F0_Intel)
+
+# Juntamos todos los precios.
+Precios_Strike <- rbind(precio_AAPL,precio_MSFT,precio_AMZN,precio_GOOGL,precio_NFLX, precio_INTC)
+Precios_Strike <- as.data.frame(Precios_Strike)
+colnames(Precios_Strike) <- c("Precios Strike")
+rownames(Precios_Strike) <- c("Apple", "Microsoft", "Amazon", "Google","Netflix","Intel")
+
+kable(Precios_Strike)
+```
+
+Pensamos que este promedio nos da una buena aproxicmación del Precio Strike a pactar pues estamos considerando una estimación puntual, el rendimiento del activo y bandas de confianza en donde el precio futuro del activo podría encontrarse.
+Por lo tanto al tomar en cuenta estos 4 distintos factores creemos que la proyección se complementa en un sentido estocástico, estadístico y financiero.
+
+Considerando que Google y Amazon tendrán un split de acciones de 20 por 1 en el segundo trimestre del 2022.
+Es importante considerar esto pues al pactar un precio al vencimiento debemos cumplir con el contrato lo cuál podría ser catastrófico si pagamos el precio de algo 20 veces de lo que realmente vale.
+Haremos este ajuste al precio proyectado para estas acciones.
+Por lo que nuestros Precios Strike finales en dólares serán los siguientes:
+
+```{r echo=FALSE}
+# Calculamos el precio propuesto para Amazon
+precio_AMZN <- mean(Media_Amazon,Var_Amazon[,2],Var_Amazon[,4],F0_Amazon)/20
+
+# Calculamos el precio propuesto para Google
+precio_GOOGL <- mean(Media_Google,Var_Google[,2],Var_Google[,4],F0_Google)/20
+
+# Juntamos todos los precios.
+Precios_Strike <- rbind(precio_AAPL,precio_MSFT,precio_AMZN,precio_GOOGL,precio_NFLX, precio_INTC)
+Precios_Strike <- as.data.frame(Precios_Strike)
+colnames(Precios_Strike) <- c("Precios Strike")
+rownames(Precios_Strike) <- c("Apple", "Microsoft", "Amazon", "Google","Netflix","Intel")
+
+kable(Precios_Strike)
+```
+
