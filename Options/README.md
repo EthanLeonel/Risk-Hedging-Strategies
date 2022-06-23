@@ -10,4 +10,4 @@
 
 - To have more interaction with it you can visit the next site:
 
-#####  [Risk Theory Application.](https://rpubs.com/Leogame/Valuacion_Opciones "Pricing Options Application.")
+#####  [Pricing Options Application.](https://rpubs.com/Leogame/Valuacion_Opciones "Pricing Options Application.")
