@@ -6,3 +6,10 @@
 
 ![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Options/Vista.png)
 
+#### All the work that you can see here was made by:  
+
+- García Melena Ethan Leonel
+
+- Guerrero Suárez Luis Miguel
+
+- Ramírez Guizar Brenda Jazmín
