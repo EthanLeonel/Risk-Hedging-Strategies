@@ -1,12 +1,10 @@
-# Options Application.
+# Forwards Contracts Application.
 
-- Here you can find projects and R Codes related to Pricing Options Theory. 
+- Here you can find projects and R Codes related to Forwards Contracts Valuation. 
 
-- Here you can see a quickly view about the repository.  
+- Here you can see a quickly view about the project.  
 
-- The Dashboard was made in Shiny App by Brenda Jazmín Ramírez Guizar.
-
-![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Options/Vista%202.png)
+![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Forwards/Imagenes/Vista.png)
 
 - To have more interaction with it you can visit the next site:
 

@@ -2,7 +2,7 @@
 
 - Here you can find projects and R Codes related to Pricing Options Theory. 
 
-- Here you can see a quickly view about the repository.  
+- Here you can see a quickly view about the project.  
 
 - The Dashboard was made in Shiny App by Brenda Jazmín Ramírez Guizar.
 
