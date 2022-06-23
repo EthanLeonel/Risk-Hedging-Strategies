@@ -4,5 +4,5 @@
 
 - Here you can see a quickly view about the repository.  
 
-![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Options/Vista..png)
+![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Options/Vista.png)
 
