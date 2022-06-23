@@ -1,8 +1,8 @@
-# Loss Models Applications.
+# Risk Hedging Strategies.
 
-- Here you can find a R Codes and Bibliography related to loss functions, Goodness of Fit, Statistics, etc.
+- Here you can find projects, R Codes and bibliography related to Risk Hedging Strategies, Derivatives, Equity Market Analysis, etc.
 
-- Here you can see a quickly view about the project.  
+- Here you can see a quickly view about the repository.  
 
-![](https://github.com/EthanLeonel/Loss-Models/blob/main/R%20Codes/Vista.png)
+![](https://github.com/EthanLeonel/Risk-Hedging-Strategies/blob/main/Options/Vista..png)
 
